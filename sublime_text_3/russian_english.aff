@@ -1,0 +1,3524 @@
+SET UTF-8
+TRY '-.ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяё
+FLAG NUMBER
+
+PFX 1 Y 1
+PFX 1 0 trans .
+
+PFX 2 Y 3
+PFX 2 0 re .
+PFX 2 0 re [^e]
+PFX 2 0 re- e
+
+PFX 3 Y 3
+PFX 3 0 de .
+PFX 3 0 de [^e]
+PFX 3 0 de- e
+
+PFX 4 Y 1
+PFX 4 0 dis .
+
+PFX 5 Y 6
+PFX 5 0 co [aeiouh]
+PFX 5 0 col l
+PFX 5 0 com [bmp]
+PFX 5 0 con .
+PFX 5 0 con [^abehilmopru].
+PFX 5 0 cor r
+
+PFX 6 Y 5
+PFX 6 0 il l
+PFX 6 0 im [bmp]
+PFX 6 0 in .
+PFX 6 0 in [^blmpr]
+PFX 6 0 ir r
+
+PFX 7 Y 2
+PFX 7 0 pre .
+PFX 7 0 pro .
+
+PFX 8 Y 1
+PFX 8 0 non- .
+
+PFX 9 Y 1
+PFX 9 0 un .
+
+PFX 10 Y 1
+PFX 10 0 mis .
+
+PFX 11 Y 1
+PFX 11 0 over .
+
+PFX 12 Y 1
+PFX 12 0 out .
+
+PFX 13 Y 2
+PFX 13 0 under [^r]
+PFX 13 0 under- r
+
+REP 153
+REP a ei
+REP a ey
+REP ai ie
+REP air are
+REP air ear
+REP air ere
+REP are air
+REP are ear
+REP are eir
+REP cc k
+REP ce ts
+REP ch k
+REP ch s
+REP ch te
+REP ch ti
+REP ch tu
+REP ci s
+REP ck qu
+REP ck que
+REP dg j
+REP di j
+REP ear air
+REP ear are
+REP ear ere
+REP ear ier
+REP eau o
+REP ee i
+REP eg e.g.
+REP ei a
+REP eir are
+REP eir ere
+REP eness ity
+REP ere air
+REP ere ear
+REP ere eir
+REP ew o
+REP ew oo
+REP ew u
+REP ew ue
+REP ew ui
+REP ey a
+REP f gh
+REP f ph
+REP f ugh
+REP ff ugh
+REP ge j
+REP gg j
+REP gh f
+REP ght t
+REP i ee
+REP i igh
+REP i uy
+REP ie ai
+REP ie i.e.
+REP ier ear
+REP ieu oo
+REP ieu u
+REP igh i
+REP j dg
+REP j di
+REP j ge
+REP j gg
+REP k cc
+REP k ch
+REP k qu
+REP kw qu
+REP leness ility
+REP ness ity
+REP ness ivity
+REP o eau
+REP o ew
+REP oe u
+REP og ogue
+REP ok OK
+REP oo ew
+REP oo ieu
+REP oo u
+REP oo ui
+REP ph f
+REP qu k
+REP qu w
+REP s ch
+REP s ci
+REP s ti
+REP shun cion
+REP shun sion
+REP shun tion
+REP ss z
+REP t ght
+REP te ch
+REP ti ch
+REP ti s
+REP ts ce
+REP tu ch
+REP u ew
+REP u ieu
+REP u oe
+REP u oo
+REP ue ew
+REP uf ough
+REP uff ough
+REP ui ew
+REP ui oo
+REP uy i
+REP w qu
+REP w ugh
+REP z ss
+REP SFX - Y 22
+REP SFX - 0 ization [^aemsy]
+REP SFX - 0 ization [^i]s
+REP SFX - 0 ization [^u]m
+REP SFX - 0 ization [aeiou]y
+REP SFX - 0 izations [^aemsy]
+REP SFX - 0 izations [^i]s
+REP SFX - 0 izations [^u]m
+REP SFX - 0 izations [aeiou]y
+REP SFX - 0 tization a
+REP SFX - 0 tizations a
+REP SFX - e ization [^l]e
+REP SFX - e ization [aeiou]le
+REP SFX - e izations [^l]e
+REP SFX - e izations [aeiou]le
+REP SFX - le ilization [^aeiou]le
+REP SFX - le ilizations [^aeiou]le
+REP SFX - s zation is
+REP SFX - s zations is
+REP SFX - um ization um
+REP SFX - um izations um
+REP SFX - y ization [^aeiou]y
+REP SFX - y izations [^aeiou]y
+REP SFX + Y 22
+REP SFX + 0 izability [^aemsy]
+REP SFX + 0 izability [^i]s
+REP SFX + 0 izability [^u]m
+REP SFX + 0 izability [aeiou]y
+REP SFX + 0 izable [^aemsy]
+REP SFX + 0 izable [^i]s
+REP SFX + 0 izable [^u]m
+REP SFX + 0 izable [aeiou]y
+REP SFX + 0 tizability a
+REP SFX + 0 tizable a
+REP SFX + e izability [^l]e
+REP SFX + e izability [aeiou]le
+REP SFX + e izable [^l]e
+REP SFX + e izable [aeiou]le
+REP SFX + le ilizability [^aeiou]le
+REP SFX + le ilizable [^aeiou]le
+REP SFX + s zability is
+REP SFX + s zable is
+REP SFX + um izability um
+REP SFX + um izable um
+REP SFX + y izability [^aeiou]y
+REP SFX + y izable [^aeiou]y
+
+SFX 14 Y 9
+SFX 14 0 atically [aeiou]m
+SFX 14 0 ically [^aeiou]m
+SFX 14 0 ically [^aemry]
+SFX 14 0 ically [^e]r
+SFX 14 0 tically ma
+SFX 14 a ically [^m]a
+SFX 14 e ically e
+SFX 14 er rically er
+SFX 14 y ically y
+
+SFX 15 Y 21
+SFX 15 0 biness [^aeio][aeiou]b
+SFX 15 0 diness [^aeio][aeiou]d
+SFX 15 0 finess [^aeio][aeiou]f
+SFX 15 0 giness [^aeio][aeiou]g
+SFX 15 0 iness [^aeio]e[nrt]
+SFX 15 0 iness [^aeiou][bcdfgklmnprstvz]
+SFX 15 0 iness [^ebcdfgklmnprstvz]
+SFX 15 0 iness [aeio][aeiou][bcdfgklmnprstvz]
+SFX 15 0 iness [aeiouy]e
+SFX 15 0 kiness [^aeio][aeiou]c
+SFX 15 0 kiness [^aeio][aeiou]k
+SFX 15 0 liness [^aeio][aeiou]l
+SFX 15 0 miness [^aeio][aeiou]m
+SFX 15 0 niness [^aeio][aiou]n
+SFX 15 0 piness [^aeio][aeiou]p
+SFX 15 0 riness [^aeio][aiou]r
+SFX 15 0 siness [^aeio][aeiou]s
+SFX 15 0 tiness [^aeio][aiou]t
+SFX 15 0 viness [^aeio][aeiou]v
+SFX 15 0 ziness [^aeio][aeiou]z
+SFX 15 e iness [^aeiouy]e
+
+SFX 16 Y 20
+SFX 16 0 ist [aeiou]e
+SFX 16 0 ist [aeioubp]y
+SFX 16 0 ists [^eoy]
+SFX 16 0 ist's [^eoy]
+SFX 16 0 ists [aeiou]e
+SFX 16 0 ist's [aeiou]e
+SFX 16 0 ists [aeioubp]y
+SFX 16 0 ist's [aeioubp]y
+SFX 16 ce tist ce
+SFX 16 ce tists ce
+SFX 16 ce tist's ce
+SFX 16 e ist [^aceiou]e
+SFX 16 e ists [^aceiou]e
+SFX 16 e ist's [^aceiou]e
+SFX 16 o ist o
+SFX 16 o ists o
+SFX 16 o ist's o
+SFX 16 y ist [^aeioubp]y
+SFX 16 y ists [^aeioubp]y
+SFX 16 y ist's [^aeioubp]y
+
+SFX 17 Y 15
+SFX 17 0 swoman [aeiou][bdklmnt]e
+SFX 17 0 swoman [bdknmt]
+SFX 17 0 swoman's [aeiou][bdklmnt]e
+SFX 17 0 swoman's [bdknmt]
+SFX 17 0 swomen [aeiou][bdklmnt]e
+SFX 17 0 swomen [bdknmt]
+SFX 17 0 woman [^aeiou][bdklmnt]e
+SFX 17 0 woman [^bdeknmt]
+SFX 17 0 woman [^bdklmnt]e
+SFX 17 0 woman's [^aeiou][bdklmnt]e
+SFX 17 0 woman's [^bdeknmt]
+SFX 17 0 woman's [^bdklmnt]e
+SFX 17 0 women [^aeiou][bdklmnt]e
+SFX 17 0 women [^bdeknmt]
+SFX 17 0 women [^bdklmnt]e
+
+SFX 18 Y 3
+SFX 18 0 ful [^y]
+SFX 18 0 ful [aeiou]y
+SFX 18 y iful [^aeiou]y
+
+SFX 19 Y 9
+SFX 19 0 able [^acegilou]e
+SFX 19 0 able [^aeiou][cl]
+SFX 19 0 able [^cely]
+SFX 19 0 able [aeio][aeiou][cl]
+SFX 19 0 able [aeiou]y
+SFX 19 0 kable [^aeio][aeiou]c
+SFX 19 0 lable [^aeio][aeiou]l
+SFX 19 e able [acegilou]e
+SFX 19 y iable [^aeiou]y
+
+SFX 20 Y 44
+SFX 20 0 ize [^aemsy]
+SFX 20 0 ize [^i]s
+SFX 20 0 ize [^u]m
+SFX 20 0 ize [aeiou]y
+SFX 20 0 ized [^aemsy]
+SFX 20 0 ized [^i]s
+SFX 20 0 ized [^u]m
+SFX 20 0 ized [aeiou]y
+SFX 20 0 izes [^aemsy]
+SFX 20 0 izes [^i]s
+SFX 20 0 izes [^u]m
+SFX 20 0 izes [aeiou]y
+SFX 20 0 izing [^aemsy]
+SFX 20 0 izing [^i]s
+SFX 20 0 izing [^u]m
+SFX 20 0 izing [aeiou]y
+SFX 20 0 tize a
+SFX 20 0 tized a
+SFX 20 0 tizes a
+SFX 20 0 tizing a
+SFX 20 e ize [^l]e
+SFX 20 e ize [aeiou]le
+SFX 20 e ized [^l]e
+SFX 20 e ized [aeiou]le
+SFX 20 e izes [^l]e
+SFX 20 e izes [aeiou]le
+SFX 20 e izing [^l]e
+SFX 20 e izing [aeiou]le
+SFX 20 le ilize [^aeiou]le
+SFX 20 le ilized [^aeiou]le
+SFX 20 le ilizes [^aeiou]le
+SFX 20 le ilizing [^aeiou]le
+SFX 20 s ze is
+SFX 20 s zed is
+SFX 20 s zes is
+SFX 20 s zing is
+SFX 20 um ize um
+SFX 20 um ized um
+SFX 20 um izes um
+SFX 20 um izing um
+SFX 20 y ize [^aeiou]y
+SFX 20 y ized [^aeiou]y
+SFX 20 y izes [^aeiou]y
+SFX 20 y izing [^aeiou]y
+
+SFX 21 Y 33
+SFX 21 0 izer [^aemsy]
+SFX 21 0 izer [^i]s
+SFX 21 0 izer [^u]m
+SFX 21 0 izer [aeiou]y
+SFX 21 0 izers [^aemsy]
+SFX 21 0 izer's [^aemsy]
+SFX 21 0 izers [^i]s
+SFX 21 0 izer's [^i]s
+SFX 21 0 izers [^u]m
+SFX 21 0 izer's [^u]m
+SFX 21 0 izers [aeiou]y
+SFX 21 0 izer's [aeiou]y
+SFX 21 0 tizer a
+SFX 21 0 tizers a
+SFX 21 0 tizer's a
+SFX 21 e izer [^l]e
+SFX 21 e izer [aeiou]le
+SFX 21 e izers [^l]e
+SFX 21 e izer's [^l]e
+SFX 21 e izers [aeiou]le
+SFX 21 e izer's [aeiou]le
+SFX 21 le ilizer [^aeiou]le
+SFX 21 le ilizers [^aeiou]le
+SFX 21 le ilizer's [^aeiou]le
+SFX 21 s zer is
+SFX 21 s zers is
+SFX 21 s zer's is
+SFX 21 um izer um
+SFX 21 um izers um
+SFX 21 um izer's um
+SFX 21 y izer [^aeiou]y
+SFX 21 y izers [^aeiou]y
+SFX 21 y izer's [^aeiou]y
+
+SFX 22 Y 104
+SFX 22 0 а в
+SFX 22 0 а ин
+SFX 22 0 о в
+SFX 22 0 о ин
+SFX 22 0 ого ин
+SFX 22 0 ой в
+SFX 22 0 ой ин
+SFX 22 0 ом в
+SFX 22 0 ом ин
+SFX 22 0 ому ин
+SFX 22 0 у в
+SFX 22 0 у ин
+SFX 22 0 ы в
+SFX 22 0 ы ин
+SFX 22 0 ым в
+SFX 22 0 ым ин
+SFX 22 0 ыми в
+SFX 22 0 ыми ин
+SFX 22 0 ых в
+SFX 22 0 ых ин
+SFX 22 ий ая [гкх]ий
+SFX 22 ий ая [жшщч]ий
+SFX 22 ий его [жнршщч]ий
+SFX 22 ий ее [жншщч]ий
+SFX 22 ий ей [жншщч]ий
+SFX 22 ий ем [жнршщч]ий
+SFX 22 ий ему [жнршщч]ий
+SFX 22 ий ею [жншщч]ий
+SFX 22 ий ого [гкх]ий
+SFX 22 ий ое [гкх]ий
+SFX 22 ий ой [гкх]ий
+SFX 22 ий ом [гкх]ий
+SFX 22 ий ому [гкх]ий
+SFX 22 ий ою [гкх]ий
+SFX 22 ий ую [гкх]ий
+SFX 22 ий ую [жшщч]ий
+SFX 22 ий юю ний
+SFX 22 ий яя ний
+SFX 22 ийся аяся [шщ]ийся
+SFX 22 ийся егося [шщ]ийся
+SFX 22 ийся ееся [шщ]ийся
+SFX 22 ийся ейся [шщ]ийся
+SFX 22 ийся емся [шщ]ийся
+SFX 22 ийся емуся [шщ]ийся
+SFX 22 ийся еюся [шщ]ийся
+SFX 22 ийся иеся [шщ]ийся
+SFX 22 ийся имися [шщ]ийся
+SFX 22 ийся имся [шщ]ийся
+SFX 22 ийся ихся [шщ]ийся
+SFX 22 ийся уюся [шщ]ийся
+SFX 22 й е [гкх]ий
+SFX 22 й е [жнршщч]ий
+SFX 22 й е ый
+SFX 22 й м [гкх]ий
+SFX 22 й м [жнршщч]ий
+SFX 22 й м ый
+SFX 22 й ми [гкх]ий
+SFX 22 й ми [жнршщч]ий
+SFX 22 й ми ый
+SFX 22 й х [гкх]ий
+SFX 22 й х [жнршщч]ий
+SFX 22 й х ый
+SFX 22 й ю ой
+SFX 22 ой ая ой
+SFX 22 ой ие [гжкхшщч]ой
+SFX 22 ой им [гжкхшщч]ой
+SFX 22 ой ими [гжкхшщч]ой
+SFX 22 ой их [гжкхшщч]ой
+SFX 22 ой ого ой
+SFX 22 ой ое ой
+SFX 22 ой ом ой
+SFX 22 ой ому ой
+SFX 22 ой ую ой
+SFX 22 ой ые [^гжкхшщч]ой
+SFX 22 ой ым [^гжкхшщч]ой
+SFX 22 ой ыми [^гжкхшщч]ой
+SFX 22 ой ых [^гжкхшщч]ой
+SFX 22 ом ая ом
+SFX 22 ом ие [чхшщкжг]ом
+SFX 22 ом ий [чхшщкжг]ом
+SFX 22 ом им [чхшщкжг]ом
+SFX 22 ом ими [чхшщкжг]ом
+SFX 22 ом их [чхшщкжг]ом
+SFX 22 ом ого ом
+SFX 22 ом ое ом
+SFX 22 ом ому ом
+SFX 22 ом ые [^чхшщкжг]ом
+SFX 22 ом ый [^чхшщкжг]ом
+SFX 22 ом ым [^чхшщкжг]ом
+SFX 22 ом ыми [^чхшщкжг]ом
+SFX 22 ом ых [^чхшщкжг]ом
+SFX 22 ый ая ый
+SFX 22 ый его цый
+SFX 22 ый ее цый
+SFX 22 ый ей цый
+SFX 22 ый ем цый
+SFX 22 ый ему цый
+SFX 22 ый ого [^ц]ый
+SFX 22 ый ое [^ц]ый
+SFX 22 ый ой [^ц]ый
+SFX 22 ый ом [^ц]ый
+SFX 22 ый ому [^ц]ый
+SFX 22 ый ою [^ц]ый
+SFX 22 ый ую ый
+
+SFX 23 Y 20
+SFX 23 0 ability [^aeiou][bcdfgklmnprstvz]
+SFX 23 0 ability [^ebcdfgklmnprstvzy]
+SFX 23 0 ability [acegilou]e
+SFX 23 0 ability [aeio][aeiou][bcdfgklmnprstvz]
+SFX 23 0 ability [aeiou]y
+SFX 23 0 able [^aeiou]
+SFX 23 0 able [^aeiou][bcdfgklmnprstvz]
+SFX 23 0 able [^ebcdfgklmnprstvzy]
+SFX 23 0 able [acegilou]e
+SFX 23 0 able [aeio][aeiou][bcdfgklmnprstvz]
+SFX 23 0 able [aeiou]y
+SFX 23 0 able ee
+SFX 23 0 bability [^aeio][aeiou]b
+SFX 23 0 bable [^aeio][aeiou]b
+SFX 23 0 dability [^aeio][aeiou]d
+SFX 23 0 dable [^aeio][aeiou]d
+SFX 23 0 fability [^aeio][aeiou]f
+SFX 23 0 fable [^aeio][aeiou]f
+SFX 23 0 gability [^aeio][aeiou]g
+SFX 23 0 gable [^aeio][aeiou]g
+
+SFX 24 Y 29
+SFX 24 0 kability [^aeio][aeiou]c
+SFX 24 0 kability [^aeio][aeiou]k
+SFX 24 0 kable [^aeio][aeiou]c
+SFX 24 0 kable [^aeio][aeiou]k
+SFX 24 0 lability [^aeio][aeiou]l
+SFX 24 0 lable [^aeio][aeiou]l
+SFX 24 0 mability [^aeio][aeiou]m
+SFX 24 0 mable [^aeio][aeiou]m
+SFX 24 0 nability [^aeio][aeiou]n
+SFX 24 0 nable [^aeio][aeiou]n
+SFX 24 0 pability [^aeio][aeiou]p
+SFX 24 0 pable [^aeio][aeiou]p
+SFX 24 0 rability [^aeio][aeiou]r
+SFX 24 0 rable [^aeio][aeiou]r
+SFX 24 0 sability [^aeio][aeiou]s
+SFX 24 0 sable [^aeio][aeiou]s
+SFX 24 0 tability [^aeio][aeiou]t
+SFX 24 0 table [^aeio][aeiou]t
+SFX 24 0 vability [^aeio][aeiou]v
+SFX 24 0 vable [^aeio][aeiou]v
+SFX 24 0 zability [^aeio][aeiou]z
+SFX 24 0 zable [^aeio][aeiou]z
+SFX 24 0 те [^ст]ь
+SFX 24 0 те [ий]
+SFX 24 e ability [^a]te
+SFX 24 e ability [^acegilotu]e
+SFX 24 e able [^a]te
+SFX 24 e able [^acegilotu]e
+SFX 24 e able [^aeiou]e
+
+SFX 25 Y 37
+SFX 25 te bility ate
+SFX 25 te ble ate
+SFX 25 y iability [^aeiou]y
+SFX 25 y iable [^aeiou]y
+SFX 25 ем ая [чхшщкжг]ем
+SFX 25 ем его ем
+SFX 25 ем ее ем
+SFX 25 ем ему ем
+SFX 25 ем ие ем
+SFX 25 ем ий ем
+SFX 25 ем им ем
+SFX 25 ем ими ем
+SFX 25 ем их ем
+SFX 25 ем яя [^чхшщкжг]ем
+SFX 25 ить и ить
+SFX 25 оть и оть
+SFX 25 оть ите оть
+SFX 25 оться ись оться
+SFX 25 оться итесь оться
+SFX 25 сь тесь ись
+SFX 25 ся тесь [^т]ься
+SFX 25 ся тесь йся
+SFX 25 ть й [аея]ть
+SFX 25 ть йте [аея]ть
+SFX 25 ться йся [аея]ться
+SFX 25 ться йтесь [аея]ться
+SFX 25 ться сь иться
+SFX 25 ться тесь иться
+SFX 25 уть и уть
+SFX 25 уть ите уть
+SFX 25 уться ись уться
+SFX 25 уться итесь уться
+SFX 25 ыть ой ыть
+SFX 25 ыть ойте ыть
+SFX 25 ыться ойся ыться
+SFX 25 ыться ойтесь ыться
+SFX 25 ь е ить
+
+SFX 26 Y 12
+SFX 26 ая ие [чхшщкжг]ая
+SFX 26 ая ий [чхшщкжг]ая
+SFX 26 ая им [чхшщкжг]ая
+SFX 26 ая ими [чхшщкжг]ая
+SFX 26 ая их [чхшщкжг]ая
+SFX 26 ая ой ая
+SFX 26 ая ую ая
+SFX 26 ая ые [^чхшщкжг]ая
+SFX 26 ая ый [^чхшщкжг]ая
+SFX 26 ая ым [^чхшщкжг]ая
+SFX 26 ая ыми [^чхшщкжг]ая
+SFX 26 ая ых [^чхшщкжг]ая
+
+SFX 27 Y 2
+SFX 27 0 bed [^aeio][aeiou]b
+SFX 27 0 d [^e]e
+
+SFX 28 Y 3
+SFX 28 0 d e
+SFX 28 0 ded [^aeio][aeiou]d
+SFX 28 0 ed [^aeiou][bcdfgklmnprstvz]
+
+SFX 29 Y 1
+SFX 29 0 ed [^ebcdfgklmnprstvyz]
+
+SFX 30 Y 2
+SFX 30 0 ed [^ey]
+SFX 30 0 ed [aeio][aeiou][bcdfgkmnprstvz]
+
+SFX 31 Y 1
+SFX 31 0 ed [aeio][eiou]l
+
+SFX 32 Y 4
+SFX 32 0 ed [aeiou]y
+SFX 32 0 ed [aeo]al
+SFX 32 0 fed [^aeio][aeiou]f
+SFX 32 0 ged [^aeio][aeiou]g
+
+SFX 33 Y 2
+SFX 33 0 ked [^aeio][aeiou]c
+SFX 33 0 ked [^aeio][aeiou]k
+
+SFX 34 Y 2
+SFX 34 0 led [^aeio][eiou]l
+SFX 34 0 led [^aeo]al
+
+SFX 35 Y 9
+SFX 35 0 med [^aeio][aeiou]m
+SFX 35 0 ned [^aeio][aeiou]n
+SFX 35 0 ped [^aeio][aeiou]p
+SFX 35 0 red [^aeio][aeiou]r
+SFX 35 0 sed [^aeio][aeiou]s
+SFX 35 0 ted [^aeio][aeiou]t
+SFX 35 0 ved [^aeio][aeiou]v
+SFX 35 0 zed [^aeio][aeiou]z
+SFX 35 e d ee
+
+SFX 36 Y 7
+SFX 36 y ied [^aeiou]y
+SFX 36 их ая [чхшщкжг]их
+SFX 36 их ие их
+SFX 36 их им их
+SFX 36 их ую [чхшщкжг]их
+SFX 36 их юю [^чхшщкжг]их
+SFX 36 их яя [^чхшщкжг]их
+
+SFX 37 Y 22
+SFX 37 а ам а
+SFX 37 а ами а
+SFX 37 а ах а
+SFX 37 а е а
+SFX 37 а ов а
+SFX 37 а ом а
+SFX 37 а у а
+SFX 37 е й ее
+SFX 37 ый ее ый
+SFX 37 ый ей ый
+SFX 37 ь е ь
+SFX 37 ь ем ь
+SFX 37 ь ём ь
+SFX 37 ь ю ь
+SFX 37 ь я ь
+SFX 37 я е [^и]я
+SFX 37 я ей я
+SFX 37 я ёй я
+SFX 37 я ею я
+SFX 37 я ёю я
+SFX 37 я и я
+SFX 37 я ю я
+
+SFX 38 Y 35
+SFX 38 0 ю ь
+SFX 38 а ой а
+SFX 38 а у а
+SFX 38 ая ой ая
+SFX 38 ая ую ая
+SFX 38 енок ят енок
+SFX 38 ёнок ят ёнок
+SFX 38 енок ята енок
+SFX 38 ёнок ята ёнок
+SFX 38 енок ятам енок
+SFX 38 ёнок ятам ёнок
+SFX 38 енок ятами енок
+SFX 38 ёнок ятами ёнок
+SFX 38 енок ятах енок
+SFX 38 ёнок ятах ёнок
+SFX 38 и а [чхшщкжг]и
+SFX 38 и ам [чхшщкжг]и
+SFX 38 и ами [чхшщкж]и
+SFX 38 и ах [чхшщкжг]и
+SFX 38 и у [чхшщкжг]и
+SFX 38 и ю [^чхшщкжг]и
+SFX 38 и я [^чхшщкжг]и
+SFX 38 и ям [^чхшщкжг]и
+SFX 38 и ями [^чхшщкж]и
+SFX 38 и ях [^чхшщкжг]и
+SFX 38 ок ка нок
+SFX 38 ок ке нок
+SFX 38 ок ком нок
+SFX 38 ок ку нок
+SFX 38 онок ат онок
+SFX 38 онок ата онок
+SFX 38 онок атам онок
+SFX 38 онок атами онок
+SFX 38 онок атах онок
+SFX 38 ь и ь
+
+SFX 39 Y 11
+SFX 39 0 bing [^aeio][aeiou]b
+SFX 39 0 ding [^aeio][aeiou]d
+SFX 39 0 fing [^aeio][aeiou]f
+SFX 39 0 ging [^aeio][aeiou]g
+SFX 39 0 ing [^aeiou][bcdfgklmnprstvz]
+SFX 39 0 ing [^e]
+SFX 39 0 ing [^ebcdfgklmnprstvz]
+SFX 39 0 ing [aeio][aeiou][bcdfgkmnprstvz]
+SFX 39 0 ing [aeio][eiou]l
+SFX 39 0 ing [aeo]al
+SFX 39 0 ing [eoy]e
+
+SFX 40 Y 2
+SFX 40 0 king [^aeio][aeiou]c
+SFX 40 0 king [^aeio][aeiou]k
+
+SFX 41 Y 17
+SFX 41 0 ling [^aeio][eiou]l
+SFX 41 0 ling [^aeo]al
+SFX 41 0 ming [^aeio][aeiou]m
+SFX 41 0 ning [^aeio][aeiou]n
+SFX 41 0 ping [^aeio][aeiou]p
+SFX 41 0 ring [^aeio][aeiou]r
+SFX 41 0 sing [^aeio][aeiou]s
+SFX 41 0 ting [^aeio][aeiou]t
+SFX 41 0 ving [^aeio][aeiou]v
+SFX 41 0 zing [^aeio][aeiou]z
+SFX 41 0 а [^ейкоья]
+SFX 41 0 е [^ейкоья]
+SFX 41 0 м я
+SFX 41 0 ми я
+SFX 41 0 у [^ейкоья]
+SFX 41 0 х я
+SFX 41 0 ым [^ежйкоцчшщья]
+
+SFX 42 Y 3
+SFX 42 e ing [^eioy]e
+SFX 42 e ing e
+SFX 42 ie ying ie
+
+SFX 43 Y 47
+SFX 43 ек ка ек
+SFX 43 ек ке ек
+SFX 43 ек ком ек
+SFX 43 ек ку ек
+SFX 43 ий ого ий
+SFX 43 ий ом ий
+SFX 43 ий ому ий
+SFX 43 й го ой
+SFX 43 й м ий
+SFX 43 й м ой
+SFX 43 й м ый
+SFX 43 й му ой
+SFX 43 йня ен йня
+SFX 43 ла лась ла
+SFX 43 ла ли ла
+SFX 43 ла лись ла
+SFX 43 ла ло ла
+SFX 43 ла лось ла
+SFX 43 ня ен [^аезийоуыь]ня
+SFX 43 ой им ой
+SFX 43 ок ка ок
+SFX 43 ок ке ок
+SFX 43 ок ком ок
+SFX 43 ок ку ок
+SFX 43 ый ого ый
+SFX 43 ый ом ый
+SFX 43 ый ому ый
+SFX 43 ь е ь
+SFX 43 ь ей ь
+SFX 43 ь ем ь
+SFX 43 ь ём ь
+SFX 43 ь и ь
+SFX 43 ь ю ь
+SFX 43 ь я ь
+SFX 43 ь ям ь
+SFX 43 ь ями ь
+SFX 43 ь ях ь
+SFX 43 ьня ен ьня
+SFX 43 я е [^и]я
+SFX 43 я ей я
+SFX 43 я ёй я
+SFX 43 я ею я
+SFX 43 я ёю я
+SFX 43 я и я
+SFX 43 я й [еиу]я
+SFX 43 я ь [аеиоуы]ня
+SFX 43 я ю я
+
+SFX 44 Y 1
+SFX 44 0 fold .
+
+SFX 45 Y 2
+SFX 45 0 h t
+SFX 45 0 hs t
+
+SFX 46 Y 3
+SFX 46 0 th [^ety]
+SFX 46 0 th [^y]
+SFX 46 0 ths [^ety]
+
+SFX 47 Y 6
+SFX 47 e th [^ev]e
+SFX 47 e ths [^ev]e
+SFX 47 ree ird ree
+SFX 47 ree irds ree
+SFX 47 ve fth ve
+SFX 47 ve fths ve
+
+SFX 48 Y 27
+SFX 48 y ieth y
+SFX 48 y ieths y
+SFX 48 а е а
+SFX 48 а ей ща
+SFX 48 а ею ща
+SFX 48 а и [гжкхчшщ]а
+SFX 48 а ой [^жцчшщ]а
+SFX 48 а ою [^жцчшщ]а
+SFX 48 а у а
+SFX 48 а ы [^гжкхчшщ]а
+SFX 48 в вшая в
+SFX 48 в вшее в
+SFX 48 в вшей в
+SFX 48 в вшем в
+SFX 48 в вши в
+SFX 48 в вшие в
+SFX 48 в вший в
+SFX 48 в вшим в
+SFX 48 в вших в
+SFX 48 в л в
+SFX 48 в ть в
+SFX 48 в ться в
+SFX 48 я е [^и]я
+SFX 48 я ей я
+SFX 48 я ею я
+SFX 48 я и я
+SFX 48 я ю я
+
+SFX 49 Y 6
+SFX 49 0 м а
+SFX 49 0 м я
+SFX 49 0 ми а
+SFX 49 0 ми я
+SFX 49 0 х а
+SFX 49 0 х я
+
+SFX 50 Y 31
+SFX 50 а 0 [^к]а
+SFX 50 а е а
+SFX 50 а ей [цчшщ]а
+SFX 50 а ею [цчшщ]а
+SFX 50 а и [гжкхчшщ]а
+SFX 50 а ой [^жцчшщ]а
+SFX 50 а ою [^жцчшщ]а
+SFX 50 а у а
+SFX 50 а ы [^гжкхчшщ]а
+SFX 50 йка ек йка
+SFX 50 йня ен йня
+SFX 50 ка ек [жцчш]ка
+SFX 50 ка к [аеиоуыюя]ка
+SFX 50 ка ок [^аежийоуцчшьыюя]ка
+SFX 50 ня ен [^аезийоуыья]ня
+SFX 50 чей чая чей
+SFX 50 чей чем чей
+SFX 50 чей чие чей
+SFX 50 чей чий чей
+SFX 50 чей чим чей
+SFX 50 чей чих чей
+SFX 50 чей чую чей
+SFX 50 ька ек ька
+SFX 50 ьня ен ьня
+SFX 50 я е [^и]я
+SFX 50 я ей я
+SFX 50 я ею я
+SFX 50 я и я
+SFX 50 я й [еиу]я
+SFX 50 я ь [аеиоуыя]ня
+SFX 50 я ю я
+
+SFX 51 Y 3
+SFX 51 0 bings [^aeio][aeiou]b
+SFX 51 0 dings [^aeio][aeiou]d
+SFX 51 0 fings [^aeio][aeiou]f
+
+SFX 52 Y 38
+SFX 52 0 gings [^aeio][aeiou]g
+SFX 52 0 ings [^aeio]e[nrt]
+SFX 52 0 ings [^aeiou][bcdfgklmnprstvz]
+SFX 52 0 ings [^e]
+SFX 52 0 ings [^ebcdfgklmnprstvz]
+SFX 52 0 ings [aeio][aeiou][bcdfgkmnprstvz]
+SFX 52 0 ings [aeio][eiou]l
+SFX 52 0 ings [aeo]al
+SFX 52 0 ings [eoy]e
+SFX 52 0 king [^aeio][aeiou]c
+SFX 52 0 kings [^aeio][aeiou]k
+SFX 52 0 lings [^aeio][eiou]l
+SFX 52 0 lings [^aeo]al
+SFX 52 0 mings [^aeio][aeiou]m
+SFX 52 0 nings [^aeio][aiou]n
+SFX 52 0 pings [^aeio][aeiou]p
+SFX 52 0 rings [^aeio][aiou]r
+SFX 52 0 sings [^aeio][aeiou]s
+SFX 52 0 tings [^aeio][aiou]t
+SFX 52 0 vings [^aeio][aeiou]v
+SFX 52 0 zings [^aeio][aeiou]z
+SFX 52 0 а [^ё]ж
+SFX 52 0 а [^еёжйоь]
+SFX 52 0 а [^ейоь]
+SFX 52 0 е [^ё]ж
+SFX 52 0 е [^еёжйоь]
+SFX 52 0 е [^ейоь]
+SFX 52 0 м [её]
+SFX 52 0 м е
+SFX 52 0 м о
+SFX 52 0 ом [^еёжйоцчшщь]
+SFX 52 0 ом [^ежйоцчшщь]
+SFX 52 0 у [^ё]ж
+SFX 52 0 у [^еёжйоь]
+SFX 52 0 у [^ейоь]
+SFX 52 e ings [^eioy]e
+SFX 52 e ings e
+SFX 52 ie yings ie
+
+SFX 53 Y 30
+SFX 53 е а [жцшщ]е
+SFX 53 ё е ьё
+SFX 53 е и ие
+SFX 53 е у [жцшщ]е
+SFX 53 е ю [^жцшщ]е
+SFX 53 ё ю ё
+SFX 53 е я [^жцшщ]е
+SFX 53 ё я ё
+SFX 53 ёж ежа ёж
+SFX 53 ёж еже ёж
+SFX 53 ёж ежу ёж
+SFX 53 й е [^и]й
+SFX 53 й ем й
+SFX 53 й и ий
+SFX 53 й ю й
+SFX 53 й я й
+SFX 53 о а о
+SFX 53 о е о
+SFX 53 о у о
+SFX 53 щей щая щей
+SFX 53 щей щее щей
+SFX 53 щей щие щей
+SFX 53 щей щий щей
+SFX 53 щей щим щей
+SFX 53 щей щих щей
+SFX 53 щей щую щей
+SFX 53 ь е ь
+SFX 53 ь ем ь
+SFX 53 ь ю ь
+SFX 53 ь я ь
+
+SFX 54 Y 13
+SFX 54 0 а [^ейоь]
+SFX 54 0 ам [^ейоь]
+SFX 54 0 ами [^ейоь]
+SFX 54 0 ах [^ейоь]
+SFX 54 0 е [^ейоь]
+SFX 54 0 ей [жчшщ]
+SFX 54 0 и [гжкхчшщ]
+SFX 54 0 м е
+SFX 54 0 м о
+SFX 54 0 ов [^ежйоцчшщь]
+SFX 54 0 ом [^ежйоцчшщь]
+SFX 54 0 у [^ейоь]
+SFX 54 0 ы [^гежйкохчшщь]
+
+SFX 55 Y 50
+SFX 55 е а [жцшщ]е
+SFX 55 е ам [жцшщ]е
+SFX 55 е ами [жцшщ]е
+SFX 55 е ах [жцшщ]е
+SFX 55 е ей [^жицщь]е
+SFX 55 е и ие
+SFX 55 е й ие
+SFX 55 е у [жцшщ]е
+SFX 55 е ю [^жцшщ]е
+SFX 55 е я [^жцшщ]е
+SFX 55 е ям [^жцшщ]е
+SFX 55 е ями [^жцшщ]е
+SFX 55 е ях [^жцшщ]е
+SFX 55 ен ена ен
+SFX 55 ен енная ен
+SFX 55 ен енной ен
+SFX 55 ен енные ен
+SFX 55 ен енный ен
+SFX 55 ен енных ен
+SFX 55 ен ено ен
+SFX 55 ен ены ен
+SFX 55 й е [^и]й
+SFX 55 й ев й
+SFX 55 й ем й
+SFX 55 й и [аеоуюя]й
+SFX 55 й и ий
+SFX 55 й ю й
+SFX 55 й я й
+SFX 55 й ям й
+SFX 55 й ями й
+SFX 55 й ях й
+SFX 55 о 0 [вгдст]о
+SFX 55 о а о
+SFX 55 о ам о
+SFX 55 о ами о
+SFX 55 о ах о
+SFX 55 о е о
+SFX 55 о и [ичш]ко
+SFX 55 о у о
+SFX 55 ще щ ще
+SFX 55 ь е ь
+SFX 55 ь ей ь
+SFX 55 ь ем ь
+SFX 55 ь и ь
+SFX 55 ь ю ь
+SFX 55 ь я ь
+SFX 55 ь ям ь
+SFX 55 ь ями ь
+SFX 55 ь ях ь
+SFX 55 ье ий ье
+
+SFX 56 Y 3
+SFX 56 0 ament m
+SFX 56 0 aments m
+SFX 56 0 ament's m
+
+SFX 57 Y 10
+SFX 57 0 ment .
+SFX 57 0 ment [^my]
+SFX 57 0 ment [aeiou]y
+SFX 57 0 ments [^my]
+SFX 57 0 ment's [^my]
+SFX 57 0 ments [aeiou]y
+SFX 57 0 ment's [aeiou]y
+SFX 57 0 ла [^аиья]
+SFX 57 0 ли [^аиья]
+SFX 57 0 ло [^аиья]
+
+SFX 58 Y 62
+SFX 58 y iment [^aeiou]y
+SFX 58 y iments [^aeiou]y
+SFX 58 y iment's [^aeiou]y
+SFX 58 а и а
+SFX 58 а о а
+SFX 58 ась ись ась
+SFX 58 ась ось ась
+SFX 58 езти ёз зти
+SFX 58 ести ёл ести
+SFX 58 естись ёлся естись
+SFX 58 есть ел честь
+SFX 58 есть ёл честь
+SFX 58 есть ла честь
+SFX 58 есть ли честь
+SFX 58 есть ло честь
+SFX 58 ечь ёк ечь
+SFX 58 ечься ёкся ечься
+SFX 58 зти з зти
+SFX 58 зть з зть
+SFX 58 сти л [^е]сти
+SFX 58 сти л сти
+SFX 58 сти ла сти
+SFX 58 сти ли сти
+SFX 58 сти ло сти
+SFX 58 стись лась стись
+SFX 58 стись лись стись
+SFX 58 стись лось стись
+SFX 58 стись лся [^е]стись
+SFX 58 стись лся стись
+SFX 58 сть л [^ч].сть
+SFX 58 сть ла [^ч].сть
+SFX 58 сть ли [^ч].сть
+SFX 58 сть ло [^ч].сть
+SFX 58 сться лась сться
+SFX 58 сться лись сться
+SFX 58 сться лось сться
+SFX 58 сться лся сться
+SFX 58 ся лась [^аиья]ся
+SFX 58 ся лись [^аиья]ся
+SFX 58 ся лось [^аиья]ся
+SFX 58 ти ла зти
+SFX 58 ти ли зти
+SFX 58 ти ло зти
+SFX 58 ть л [^зс]ть
+SFX 58 ть ла [^с]ть
+SFX 58 ть ли [^с]ть
+SFX 58 ть ло [^с]ть
+SFX 58 ться лась [^с]ться
+SFX 58 ться лись [^с]ться
+SFX 58 ться лось [^с]ться
+SFX 58 ться лся [^зс]ться
+SFX 58 ться ся зться
+SFX 58 чь к [^е]чь
+SFX 58 чь к чь
+SFX 58 чь кла чь
+SFX 58 чь кли чь
+SFX 58 чь кло чь
+SFX 58 чься клась чься
+SFX 58 чься клись чься
+SFX 58 чься клось чься
+SFX 58 чься кся [^е]чься
+SFX 58 чься кся чься
+
+SFX 59 Y 1
+SFX 59 0 's .
+
+SFX 60 Y 108
+SFX 60 оть ем оть
+SFX 60 оть ет оть
+SFX 60 оть ете оть
+SFX 60 оть ешь оть
+SFX 60 оть ю оть
+SFX 60 оть ют оть
+SFX 60 оться емся оться
+SFX 60 оться етесь оться
+SFX 60 оться ется оться
+SFX 60 оться ешься оться
+SFX 60 оться юсь оться
+SFX 60 оться ются оться
+SFX 60 ти дем йти
+SFX 60 ти дём йти
+SFX 60 ти дет йти
+SFX 60 ти дёт йти
+SFX 60 ти дете йти
+SFX 60 ти дёте йти
+SFX 60 ти дешь йти
+SFX 60 ти дёшь йти
+SFX 60 ти ду йти
+SFX 60 ти дут йти
+SFX 60 ти ем [зс]ти
+SFX 60 ти ём [зс]ти
+SFX 60 ти ет [зс]ти
+SFX 60 ти ёт [зс]ти
+SFX 60 ти ете [зс]ти
+SFX 60 ти ёте [зс]ти
+SFX 60 ти ешь [зс]ти
+SFX 60 ти ёшь [зс]ти
+SFX 60 ти у [зс]ти
+SFX 60 ти ут [зс]ти
+SFX 60 тись демся йтись
+SFX 60 тись дёмся йтись
+SFX 60 тись детесь йтись
+SFX 60 тись дётесь йтись
+SFX 60 тись дется йтись
+SFX 60 тись дётся йтись
+SFX 60 тись дешься йтись
+SFX 60 тись дёшься йтись
+SFX 60 тись дусь йтись
+SFX 60 тись дутся йтись
+SFX 60 тись емся [зс]тись
+SFX 60 тись ёмся [зс]тись
+SFX 60 тись етесь [зс]тись
+SFX 60 тись ётесь [зс]тись
+SFX 60 тись ется [зс]тись
+SFX 60 тись ётся [зс]тись
+SFX 60 тись ешься [зс]тись
+SFX 60 тись ёшься [зс]тись
+SFX 60 тись усь [зс]тись
+SFX 60 тись утся [зс]тись
+SFX 60 ть ем [ае]ть
+SFX 60 ть ет [ае]ть
+SFX 60 ть ете [ае]ть
+SFX 60 ть ешь [ае]ть
+SFX 60 ть т уть
+SFX 60 ть ю [ае]ть
+SFX 60 ть ют [ае]ть
+SFX 60 ться емся [ае]ться
+SFX 60 ться етесь [ае]ться
+SFX 60 ться ется [ае]ться
+SFX 60 ться ешься [ае]ться
+SFX 60 ться сь уться
+SFX 60 ться юсь [ае]ться
+SFX 60 ться ются [ае]ться
+SFX 60 уть ем уть
+SFX 60 уть ет уть
+SFX 60 уть ете уть
+SFX 60 уть ешь уть
+SFX 60 уть у уть
+SFX 60 уться емся уться
+SFX 60 уться етесь уться
+SFX 60 уться ется уться
+SFX 60 уться ешься уться
+SFX 60 чь ку чь
+SFX 60 чь кут чь
+SFX 60 чься кусь чься
+SFX 60 чься кутся чься
+SFX 60 ыть оем ыть
+SFX 60 ыть оет ыть
+SFX 60 ыть оете ыть
+SFX 60 ыть оешь ыть
+SFX 60 ыть ою ыть
+SFX 60 ыть оют ыть
+SFX 60 ыться оемся ыться
+SFX 60 ыться оетесь ыться
+SFX 60 ыться оется ыться
+SFX 60 ыться оешься ыться
+SFX 60 ыться оюсь ыться
+SFX 60 ыться оются ыться
+SFX 60 ь ем чь
+SFX 60 ь ём чь
+SFX 60 ь ет чь
+SFX 60 ь ёт чь
+SFX 60 ь ете чь
+SFX 60 ь ёте чь
+SFX 60 ь ешь чь
+SFX 60 ь ёшь чь
+SFX 60 ься емся чься
+SFX 60 ься ёмся чься
+SFX 60 ься етесь чься
+SFX 60 ься ётесь чься
+SFX 60 ься ется чься
+SFX 60 ься ётся чься
+SFX 60 ься ешься чься
+SFX 60 ься ёшься чься
+SFX 60 ься ся уться
+
+SFX 61 Y 2
+SFX 61 0 ation [^aeiou]l
+SFX 61 0 ation [^aeiou]m
+
+SFX 62 Y 1
+SFX 62 0 ation [^bdelmrstxy]
+
+SFX 63 Y 2
+SFX 63 0 ation [^e]r
+SFX 63 0 ation [^i]t
+
+SFX 64 Y 3
+SFX 64 0 en [^ey]
+SFX 64 0 ion [^m]it
+SFX 64 0 ion [sx]
+
+SFX 65 Y 1
+SFX 65 0 lation [aiou]l
+
+SFX 66 Y 1
+SFX 66 0 mation [aeiou]m
+
+SFX 67 Y 14
+SFX 67 0 а [^ь]
+SFX 67 0 ам [^ь]
+SFX 67 0 ами [^ь]
+SFX 67 0 ах [^ь]
+SFX 67 0 е [^ь]
+SFX 67 0 ов [^жцчшщь]
+SFX 67 0 ом [^жцчшщь]
+SFX 67 0 у [^ь]
+SFX 67 0 ю ь
+SFX 67 b ption b
+SFX 67 be ption be
+SFX 67 d sion d
+SFX 67 de sion de
+SFX 67 e ation [^bcdkmst]e
+
+SFX 68 Y 1
+SFX 68 e ation [iou]te
+
+SFX 69 Y 3
+SFX 69 e ion [^iou]te
+SFX 69 e ion [^o]se
+SFX 69 e ion e
+
+SFX 70 Y 3
+SFX 70 e ition ose
+SFX 70 e mation [^u]me
+SFX 70 e ption ume
+
+SFX 71 Y 1
+SFX 71 e tion ce
+
+SFX 72 Y 1
+SFX 72 el ulsion el
+
+SFX 73 Y 1
+SFX 73 er ration er
+
+SFX 74 Y 1
+SFX 74 ke cation ke
+
+SFX 75 Y 1
+SFX 75 t ssion mit
+
+SFX 76 Y 1
+SFX 76 y ication y
+
+SFX 77 Y 8
+SFX 77 ь ам [жчшщ]ь
+SFX 77 ь ами [жчшщ]ь
+SFX 77 ь ах [жчшщ]ь
+SFX 77 ь ей ь
+SFX 77 ь и ь
+SFX 77 ь ям [^жчшщ]ь
+SFX 77 ь ями [^жчшщ]ь
+SFX 77 ь ях [^жчшщ]ь
+
+SFX 78 Y 3
+SFX 78 0 al [^aebcrtxmy]
+SFX 78 0 al [^ipux]t
+SFX 78 0 al [^u]m
+
+SFX 79 Y 1
+SFX 79 0 ial [bcrx]
+
+SFX 80 Y 1
+SFX 80 0 l a
+
+SFX 81 Y 1
+SFX 81 0 tal [iu]t
+
+SFX 82 Y 1
+SFX 82 0 ual [px]t
+
+SFX 83 Y 9
+SFX 83 0 а ин
+SFX 83 0 е ин
+SFX 83 0 ев [анря]ц
+SFX 83 0 м [ая]
+SFX 83 0 ми [ая]
+SFX 83 0 ом ин
+SFX 83 0 у ин
+SFX 83 0 х [ая]
+SFX 83 e al [^bcgv]e
+
+SFX 84 Y 1
+SFX 84 e ial [bcgv]e
+
+SFX 85 Y 1
+SFX 85 um al um
+
+SFX 86 Y 1
+SFX 86 y al ty
+
+SFX 87 Y 1
+SFX 87 y ial [^t]y
+
+SFX 88 Y 123
+SFX 88 ек ка [жчш]ек
+SFX 88 ек кам [жчш]ек
+SFX 88 ек ками [жчш]ек
+SFX 88 ек ках [жчш]ек
+SFX 88 ек ке [жчш]ек
+SFX 88 ек ки [жчш]ек
+SFX 88 ек ков [жчш]ек
+SFX 88 ек ком [жчш]ек
+SFX 88 ек ку [жчш]ек
+SFX 88 ек ька [лнрс]ек
+SFX 88 ёк ька [лнрс]ёк
+SFX 88 ек ькам [лнрс]ек
+SFX 88 ёк ькам [лнрс]ёк
+SFX 88 ек ьками [лнрс]ек
+SFX 88 ёк ьками [лнрс]ёк
+SFX 88 ек ьках [лнрс]ек
+SFX 88 ёк ьках [лнрс]ёк
+SFX 88 ек ьке [лнрс]ек
+SFX 88 ёк ьке [лнрс]ёк
+SFX 88 ек ьки [лнрс]ек
+SFX 88 ёк ьки [лнрс]ёк
+SFX 88 ек ьков [лнрс]ек
+SFX 88 ёк ьков [лнрс]ёк
+SFX 88 ек ьком [лнрс]ек
+SFX 88 ёк ьком [лнрс]ёк
+SFX 88 ек ьку [лнрс]ек
+SFX 88 ёк ьку [лнрс]ёк
+SFX 88 ел ла ел
+SFX 88 ёл ла ёл
+SFX 88 ел лам ел
+SFX 88 ёл лам ёл
+SFX 88 ел лами ел
+SFX 88 ёл лами ёл
+SFX 88 ел лах ел
+SFX 88 ёл лах ёл
+SFX 88 ел ле ел
+SFX 88 ёл ле ёл
+SFX 88 ел лов ел
+SFX 88 ёл лов ёл
+SFX 88 ел лом ел
+SFX 88 ёл лом ёл
+SFX 88 ел лу ел
+SFX 88 ёл лу ёл
+SFX 88 ел лы ел
+SFX 88 ёл лы ёл
+SFX 88 ень не ень
+SFX 88 ень ней ень
+SFX 88 ень нем ень
+SFX 88 ень ни ень
+SFX 88 ень ню ень
+SFX 88 ень ня ень
+SFX 88 ень ням ень
+SFX 88 ень нями ень
+SFX 88 ень нях ень
+SFX 88 ец йца [аеио]ец
+SFX 88 ец йцам [аеио]ец
+SFX 88 ец йцами [аеио]ец
+SFX 88 ец йцах [аеио]ец
+SFX 88 ец йце [аеио]ец
+SFX 88 ец йцев [аеи]ец
+SFX 88 ец йцем [аеи]ец
+SFX 88 ец йцу [аеио]ец
+SFX 88 ец йцы [аеио]ец
+SFX 88 ец ца [^аеиол]ец
+SFX 88 ец цам [^аеиол]ец
+SFX 88 ец цами [^аеиол]ец
+SFX 88 ец цах [^аеиол]ец
+SFX 88 ец це [^аеиол]ец
+SFX 88 ец цу [^аеиол]ец
+SFX 88 ец цы [^аеиол]ец
+SFX 88 ец ьца лец
+SFX 88 ец ьцам лец
+SFX 88 ец ьцами лец
+SFX 88 ец ьцах лец
+SFX 88 ец ьце лец
+SFX 88 ец ьцу лец
+SFX 88 ец ьцы лец
+SFX 88 и ам [^абдеилнорсть]и
+SFX 88 и ами [^абдеилнорсть]и
+SFX 88 и ах [^абдеилнорсть]и
+SFX 88 и ям [абдеилнорсть]и
+SFX 88 и ями [абеилнорсь]и
+SFX 88 и ями [арс]ти
+SFX 88 и ях [абдеилнорсть]и
+SFX 88 ий ье ий
+SFX 88 ий ьего ий
+SFX 88 ий ьей ий
+SFX 88 ий ьем ий
+SFX 88 ий ьему ий
+SFX 88 ий ьи ий
+SFX 88 ий ьим ий
+SFX 88 ий ьими ий
+SFX 88 ий ьих ий
+SFX 88 ий ью ий
+SFX 88 ий ья ий
+SFX 88 ин ам ин
+SFX 88 ин ами ин
+SFX 88 ин ах ин
+SFX 88 ин е нин
+SFX 88 ин ы рин
+SFX 88 нин н нин
+SFX 88 ок ка ок
+SFX 88 ок кам ок
+SFX 88 ок ками ок
+SFX 88 ок ках ок
+SFX 88 ок ке ок
+SFX 88 ок ки ок
+SFX 88 ок ков ок
+SFX 88 ок ком ок
+SFX 88 ок ку ок
+SFX 88 оть те оть
+SFX 88 оть тей оть
+SFX 88 оть тем оть
+SFX 88 оть ти оть
+SFX 88 оть тю оть
+SFX 88 оть тя оть
+SFX 88 оть тям оть
+SFX 88 оть тями оть
+SFX 88 оть тях оть
+SFX 88 рин р рин
+SFX 88 ы ам ы
+SFX 88 ы ами ы
+SFX 88 ы ах ы
+
+SFX 89 Y 4
+SFX 89 0 ness [^y]
+SFX 89 0 ness [aeiou]y
+SFX 89 0 ness's [^y]
+SFX 89 0 ness's [aeiou]y
+
+SFX 90 Y 14
+SFX 90 y iness [^aeiou]y
+SFX 90 y iness's [^aeiou]y
+SFX 90 ить а [жчшщ]ить
+SFX 90 ить я [^жчшщ]ить
+SFX 90 иться ась [жчшщ]иться
+SFX 90 иться ясь [^жчшщ]иться
+SFX 90 ть я [^аеоу]ять
+SFX 90 ть я [ае]ть
+SFX 90 ться сь [аеоу]яться
+SFX 90 ться ясь [^аеоу]яться
+SFX 90 ться ясь [ае]ться
+SFX 90 ыть оя ыть
+SFX 90 ыться оясь ыться
+SFX 90 ять я [аеоу]ять
+
+SFX 91 Y 16
+SFX 91 0 ise [^aemsy]
+SFX 91 0 ise [^i]s
+SFX 91 0 ise [^u]m
+SFX 91 0 ise [aeiou]y
+SFX 91 0 ised [^aemsy]
+SFX 91 0 ised [^i]s
+SFX 91 0 ised [^u]m
+SFX 91 0 ised [aeiou]y
+SFX 91 0 ises [^aemsy]
+SFX 91 0 ises [^i]s
+SFX 91 0 ises [^u]m
+SFX 91 0 ises [aeiou]y
+SFX 91 0 ising [^aemsy]
+SFX 91 0 ising [^i]s
+SFX 91 0 ising [^u]m
+SFX 91 0 ising [aeiou]y
+
+SFX 92 Y 4
+SFX 92 0 tise a
+SFX 92 0 tised a
+SFX 92 0 tises a
+SFX 92 0 tising a
+
+SFX 93 Y 8
+SFX 93 e ise [^l]e
+SFX 93 e ise [aeiou]le
+SFX 93 e ised [^l]e
+SFX 93 e ised [aeiou]le
+SFX 93 e ises [^l]e
+SFX 93 e ises [aeiou]le
+SFX 93 e ising [^l]e
+SFX 93 e ising [aeiou]le
+
+SFX 94 Y 4
+SFX 94 le ilise [^aeiou]le
+SFX 94 le ilised [^aeiou]le
+SFX 94 le ilises [^aeiou]le
+SFX 94 le ilising [^aeiou]le
+
+SFX 95 Y 4
+SFX 95 s se is
+SFX 95 s sed is
+SFX 95 s ses is
+SFX 95 s sing is
+
+SFX 96 Y 4
+SFX 96 um ise um
+SFX 96 um ised um
+SFX 96 um ises um
+SFX 96 um ising um
+
+SFX 97 Y 10
+SFX 97 y ise [^aeiou]y
+SFX 97 y ised [^aeiou]y
+SFX 97 y ises [^aeiou]y
+SFX 97 y ising [^aeiou]y
+SFX 97 евать уя [жшщчц]евать
+SFX 97 евать юя [^жшщчц]евать
+SFX 97 еваться уясь [жшщчц]еваться
+SFX 97 еваться юясь [^жшщчц]еваться
+SFX 97 овать уя овать
+SFX 97 оваться уясь оваться
+
+SFX 98 Y 7
+SFX 98 0 ber [^aeio][aeiou]b
+SFX 98 0 bers [^aeio][aeiou]b
+SFX 98 0 ber's [^aeio][aeiou]b
+SFX 98 0 der [^aeio][aeiou]d
+SFX 98 0 ders [^aeio][aeiou]d
+SFX 98 0 der's [^aeio][aeiou]d
+SFX 98 0 er [^aeiou][bcdfgklmnprstvz]
+
+SFX 99 Y 1
+SFX 99 0 er [^ebcdfgklmnprstvyz]
+
+SFX 100 Y 2
+SFX 100 0 er [^ey]
+SFX 100 0 er [aeio][aeiou][bcdfgkmnprstvz]
+
+SFX 101 Y 1
+SFX 101 0 er [aeio][eiou]l
+
+SFX 102 Y 4
+SFX 102 0 er [aeiou]y
+SFX 102 0 er [aeo]al
+SFX 102 0 ers [^aeiou][bcdfgklmnprstvz]
+SFX 102 0 er's [^aeiou][bcdfgklmnprstvz]
+
+SFX 103 Y 2
+SFX 103 0 ers [^ebcdfgklmnprstvyz]
+SFX 103 0 er's [^ebcdfgklmnprstvyz]
+
+SFX 104 Y 2
+SFX 104 0 ers [aeio][aeiou][bcdfgkmnprstvz]
+SFX 104 0 er's [aeio][aeiou][bcdfgkmnprstvz]
+
+SFX 105 Y 2
+SFX 105 0 ers [aeio][eiou]l
+SFX 105 0 er's [aeio][eiou]l
+
+SFX 106 Y 10
+SFX 106 0 ers [aeiou]y
+SFX 106 0 er's [aeiou]y
+SFX 106 0 ers [aeo]al
+SFX 106 0 er's [aeo]al
+SFX 106 0 fer [^aeio][aeiou]f
+SFX 106 0 fers [^aeio][aeiou]f
+SFX 106 0 fer's [^aeio][aeiou]f
+SFX 106 0 ger [^aeio][aeiou]g
+SFX 106 0 gers [^aeio][aeiou]g
+SFX 106 0 ger's [^aeio][aeiou]g
+
+SFX 107 Y 2
+SFX 107 0 ker [^aeio][aeiou]c
+SFX 107 0 ker [^aeio][aeiou]k
+
+SFX 108 Y 4
+SFX 108 0 kers [^aeio][aeiou]c
+SFX 108 0 ker's [^aeio][aeiou]c
+SFX 108 0 kers [^aeio][aeiou]k
+SFX 108 0 ker's [^aeio][aeiou]k
+
+SFX 109 Y 2
+SFX 109 0 ler [^aeio][eiou]l
+SFX 109 0 ler [^aeo]al
+
+SFX 110 Y 13
+SFX 110 0 lers [^aeio][eiou]l
+SFX 110 0 ler's [^aeio][eiou]l
+SFX 110 0 lers [^aeo]al
+SFX 110 0 ler's [^aeo]al
+SFX 110 0 mer [^aeio][aeiou]m
+SFX 110 0 mers [^aeio][aeiou]m
+SFX 110 0 mer's [^aeio][aeiou]m
+SFX 110 0 ner [^aeio][aeiou]n
+SFX 110 0 ners [^aeio][aeiou]n
+SFX 110 0 ner's [^aeio][aeiou]n
+SFX 110 0 per [^aeio][aeiou]p
+SFX 110 0 pers [^aeio][aeiou]p
+SFX 110 0 per's [^aeio][aeiou]p
+
+SFX 111 Y 4
+SFX 111 0 r e
+SFX 111 0 rer [^aeio][aeiou]r
+SFX 111 0 rers [^aeio][aeiou]r
+SFX 111 0 rer's [^aeio][aeiou]r
+
+SFX 112 Y 14
+SFX 112 0 rs e
+SFX 112 0 r's e
+SFX 112 0 ser [^aeio][aeiou]s
+SFX 112 0 sers [^aeio][aeiou]s
+SFX 112 0 ser's [^aeio][aeiou]s
+SFX 112 0 ter [^aeio][aeiou]t
+SFX 112 0 ters [^aeio][aeiou]t
+SFX 112 0 ter's [^aeio][aeiou]t
+SFX 112 0 ver [^aeio][aeiou]v
+SFX 112 0 vers [^aeio][aeiou]v
+SFX 112 0 ver's [^aeio][aeiou]v
+SFX 112 0 zer [^aeio][aeiou]z
+SFX 112 0 zers [^aeio][aeiou]z
+SFX 112 0 zer's [^aeio][aeiou]z
+
+SFX 113 Y 1
+SFX 113 y ier [^aeiou]y
+
+SFX 114 Y 6
+SFX 114 y iers [^aeiou]y
+SFX 114 y ier's [^aeiou]y
+SFX 114 сть в сть
+SFX 114 сться вшись сться
+SFX 114 ть в [аеиоуыя]ть
+SFX 114 ться вшись [аеиоуыя]ться
+
+SFX 115 Y 3
+SFX 115 0 es [cs]h
+SFX 115 0 es [sxz]
+SFX 115 0 es [sxzh]
+
+SFX 116 Y 6
+SFX 116 0 s [^ae]u
+SFX 116 0 s [^cs]h
+SFX 116 0 s [^hsuxyz]
+SFX 116 0 s [^sxzhy]
+SFX 116 0 s [ae]u
+SFX 116 0 s [aeiou]y
+
+SFX 117 Y 1
+SFX 117 0 x [ae]u
+
+SFX 118 Y 1
+SFX 118 y ies [^aeiou]y
+
+SFX 119 Y 40
+SFX 119 ённый ена ённый
+SFX 119 ённый ено ённый
+SFX 119 ённый ены ённый
+SFX 119 ий 0 [гжчхщ]ий
+SFX 119 ий а [гжкхчщ]ий
+SFX 119 ий е [жчщ]ий
+SFX 119 ий и [гжкхчщ]ий
+SFX 119 ий о [гкх]ий
+SFX 119 йкий ек йкий
+SFX 119 йный ен йный
+SFX 119 кий к [аеёиоуы]кий
+SFX 119 кий к [аеиоуы]кий
+SFX 119 кий ок [^аеёийоуыь]кий
+SFX 119 кий ок [^аеийоуыь]кий
+SFX 119 нный н нный
+SFX 119 ный а [^ё]нный
+SFX 119 ный а нный
+SFX 119 ный ен [^еёйлнь]ный
+SFX 119 ный ен [^ейлнь]ный
+SFX 119 ный н [её]ный
+SFX 119 ный н еный
+SFX 119 ный на [^н]ный
+SFX 119 ный но [^н]ный
+SFX 119 ный ны [^н]ный
+SFX 119 ный о [^ё]нный
+SFX 119 ный о нный
+SFX 119 ный он лный
+SFX 119 ный ы [^ё]нный
+SFX 119 ный ы нный
+SFX 119 ой 0 ой
+SFX 119 ой а ой
+SFX 119 ой и [гх]ой
+SFX 119 ой о ой
+SFX 119 ой ы [^гх]ой
+SFX 119 ый 0 [^н]ый
+SFX 119 ый а [^н]ый
+SFX 119 ый о [^н]ый
+SFX 119 ый ы [^н]ый
+SFX 119 ький ек ький
+SFX 119 ьный ен ьный
+
+SFX 120 Y 17
+SFX 120 0 ber [^aeio][aeiou]b
+SFX 120 0 best [^aeio][aeiou]b
+SFX 120 0 der [^aeio][aeiou]d
+SFX 120 0 dest [^aeio][aeiou]d
+SFX 120 0 er [^aeiou][bcdfgklmnprstvz]
+SFX 120 0 er [^ebcdfgklmnprstvyz]
+SFX 120 0 er [aeio][aeiou][bcdfgklmnprstvz]
+SFX 120 0 er [aeiou]y
+SFX 120 0 est [^aeiou][bcdfgklmnprstvz]
+SFX 120 0 est [^ebcdfgklmnprstvyz]
+SFX 120 0 est [^ey]
+SFX 120 0 est [aeio][aeiou][bcdfgklmnprstvz]
+SFX 120 0 est [aeiou]y
+SFX 120 0 fer [^aeio][aeiou]f
+SFX 120 0 fest [^aeio][aeiou]f
+SFX 120 0 ger [^aeio][aeiou]g
+SFX 120 0 gest [^aeio][aeiou]g
+
+SFX 121 Y 20
+SFX 121 0 ker [^aeio][aeiou]c
+SFX 121 0 ker [^aeio][aeiou]k
+SFX 121 0 kest [^aeio][aeiou]c
+SFX 121 0 kest [^aeio][aeiou]k
+SFX 121 0 ler [^aeio][aeiou]l
+SFX 121 0 lest [^aeio][aeiou]l
+SFX 121 0 mer [^aeio][aeiou]m
+SFX 121 0 mest [^aeio][aeiou]m
+SFX 121 0 ner [^aeio][aeiou]n
+SFX 121 0 nest [^aeio][aeiou]n
+SFX 121 0 per [^aeio][aeiou]p
+SFX 121 0 pest [^aeio][aeiou]p
+SFX 121 0 r e
+SFX 121 0 rer [^aeio][aeiou]r
+SFX 121 0 rest [^aeio][aeiou]r
+SFX 121 0 ser [^aeio][aeiou]s
+SFX 121 0 sest [^aeio][aeiou]s
+SFX 121 0 st e
+SFX 121 0 ter [^aeio][aeiou]t
+SFX 121 0 test [^aeio][aeiou]t
+
+SFX 122 Y 4
+SFX 122 0 ver [^aeio][aeiou]v
+SFX 122 0 vest [^aeio][aeiou]v
+SFX 122 0 zer [^aeio][aeiou]z
+SFX 122 0 zest [^aeio][aeiou]z
+
+SFX 123 Y 2
+SFX 123 y ier [^aeiou]y
+SFX 123 y iest [^aeiou]y
+
+SFX 124 Y 38
+SFX 124 ать и [жч]ать
+SFX 124 аться ись [жч]аться
+SFX 124 евать уй [жшщчц]евать
+SFX 124 евать уйте [жшщчц]евать
+SFX 124 евать юй [^жшщчц]евать
+SFX 124 евать юйте [^жшщчц]евать
+SFX 124 еваться уйся [жшщчц]еваться
+SFX 124 еваться уйтесь [жшщчц]еваться
+SFX 124 еваться юйся [^жшщчц]еваться
+SFX 124 еваться юйтесь [^жшщчц]еваться
+SFX 124 еть и еть
+SFX 124 еть ите еть
+SFX 124 еться ись еться
+SFX 124 еться итесь еться
+SFX 124 ить й [аео]ить
+SFX 124 ить йте [аео]ить
+SFX 124 ить ь [^аео]ить
+SFX 124 ить ьте [^аео]ить
+SFX 124 иться йся [аео]иться
+SFX 124 иться йтесь [аео]иться
+SFX 124 иться ься [^аео]иться
+SFX 124 иться ьтесь [^аео]иться
+SFX 124 овать уй овать
+SFX 124 овать уйте овать
+SFX 124 оваться уйся оваться
+SFX 124 оваться уйтесь оваться
+SFX 124 сать ши сать
+SFX 124 сать шите сать
+SFX 124 саться шись саться
+SFX 124 саться шитесь саться
+SFX 124 уть ь уть
+SFX 124 уть ьте уть
+SFX 124 уться ься уться
+SFX 124 уться ьтесь уться
+SFX 124 ять й [аеоу]ять
+SFX 124 ять йте [аеоу]ять
+SFX 124 яться йся [аеоу]яться
+SFX 124 яться йтесь [аеоу]яться
+
+SFX 125 Y 162
+SFX 125 ать ем дать
+SFX 125 ать ём дать
+SFX 125 ать ет дать
+SFX 125 ать ёт дать
+SFX 125 ать ете дать
+SFX 125 ать ёте дать
+SFX 125 ать ешь дать
+SFX 125 ать ёшь дать
+SFX 125 ать им [жшщч]ать
+SFX 125 ать ит [жшщч]ать
+SFX 125 ать ите [жшщч]ать
+SFX 125 ать ишь [жшщч]ать
+SFX 125 ать у [жшщч]ать
+SFX 125 ать у дать
+SFX 125 ать ут дать
+SFX 125 аться емся даться
+SFX 125 аться ёмся даться
+SFX 125 аться етесь даться
+SFX 125 аться ётесь даться
+SFX 125 аться ется даться
+SFX 125 аться ётся даться
+SFX 125 аться ешься даться
+SFX 125 аться ёшься даться
+SFX 125 аться имся [жшщч]аться
+SFX 125 аться итесь [жшщч]аться
+SFX 125 аться ится [жшщч]аться
+SFX 125 аться ишься [жшщч]аться
+SFX 125 аться усь [жшщч]аться
+SFX 125 аться усь даться
+SFX 125 аться утся даться
+SFX 125 вать ем авать
+SFX 125 вать ём авать
+SFX 125 вать ет авать
+SFX 125 вать ёт авать
+SFX 125 вать ете авать
+SFX 125 вать ёте авать
+SFX 125 вать ешь авать
+SFX 125 вать ёшь авать
+SFX 125 вать ю авать
+SFX 125 вать ют авать
+SFX 125 ваться емся аваться
+SFX 125 ваться ёмся аваться
+SFX 125 ваться етесь аваться
+SFX 125 ваться ётесь аваться
+SFX 125 ваться ется аваться
+SFX 125 ваться ётся аваться
+SFX 125 ваться ешься аваться
+SFX 125 ваться ёшься аваться
+SFX 125 ваться юсь аваться
+SFX 125 ваться ются аваться
+SFX 125 евать уем [жшщчц]евать
+SFX 125 евать ует [жшщчц]евать
+SFX 125 евать уете [жшщчц]евать
+SFX 125 евать уешь [жшщчц]евать
+SFX 125 евать ую [жшщчц]евать
+SFX 125 евать уют [жшщчц]евать
+SFX 125 евать юем [^жшщчц]евать
+SFX 125 евать юет [^жшщчц]евать
+SFX 125 евать юете [^жшщчц]евать
+SFX 125 евать юешь [^жшщчц]евать
+SFX 125 евать юю [^жшщчц]евать
+SFX 125 евать юют [^жшщчц]евать
+SFX 125 еваться уемся [жшщчц]еваться
+SFX 125 еваться уетесь [жшщчц]еваться
+SFX 125 еваться уется [жшщчц]еваться
+SFX 125 еваться уешься [жшщчц]еваться
+SFX 125 еваться уюсь [жшщчц]еваться
+SFX 125 еваться уются [жшщчц]еваться
+SFX 125 еваться юемся [^жшщчц]еваться
+SFX 125 еваться юетесь [^жшщчц]еваться
+SFX 125 еваться юется [^жшщчц]еваться
+SFX 125 еваться юешься [^жшщчц]еваться
+SFX 125 еваться ююсь [^жшщчц]еваться
+SFX 125 еваться юются [^жшщчц]еваться
+SFX 125 овать уем овать
+SFX 125 овать ует овать
+SFX 125 овать уете овать
+SFX 125 овать уешь овать
+SFX 125 овать ую овать
+SFX 125 овать уют овать
+SFX 125 оваться уемся оваться
+SFX 125 оваться уетесь оваться
+SFX 125 оваться уется оваться
+SFX 125 оваться уешься оваться
+SFX 125 оваться уюсь оваться
+SFX 125 оваться уются оваться
+SFX 125 ть ем [^аеоу]ять
+SFX 125 ть ет [^аеоу]ять
+SFX 125 ть ете [^аеоу]ять
+SFX 125 ть ешь [^аеоу]ять
+SFX 125 ть т [жшщч]ать
+SFX 125 ть т оять
+SFX 125 ть т уть
+SFX 125 ть ю [^аеоу]ять
+SFX 125 ть ют [^аеоу]ять
+SFX 125 ться емся [^аеоу]яться
+SFX 125 ться етесь [^аеоу]яться
+SFX 125 ться ется [^аеоу]яться
+SFX 125 ться ешься [^аеоу]яться
+SFX 125 ться сь уться
+SFX 125 ться юсь [^аеоу]яться
+SFX 125 ться ются [^аеоу]яться
+SFX 125 уть ем уть
+SFX 125 уть ём уть
+SFX 125 уть ет уть
+SFX 125 уть ёт уть
+SFX 125 уть ете уть
+SFX 125 уть ёте уть
+SFX 125 уть ешь уть
+SFX 125 уть ёшь уть
+SFX 125 уть у уть
+SFX 125 уться емся уться
+SFX 125 уться ёмся уться
+SFX 125 уться етесь уться
+SFX 125 уться ётесь уться
+SFX 125 уться ется уться
+SFX 125 уться ётся уться
+SFX 125 уться ешься уться
+SFX 125 уться ёшься уться
+SFX 125 чь гу чь
+SFX 125 чь гут чь
+SFX 125 чь жем чь
+SFX 125 чь жём чь
+SFX 125 чь жет чь
+SFX 125 чь жёт чь
+SFX 125 чь жете чь
+SFX 125 чь жёте чь
+SFX 125 чь жешь чь
+SFX 125 чь жёшь чь
+SFX 125 чься гусь чься
+SFX 125 чься гутся чься
+SFX 125 чься жемся чься
+SFX 125 чься жёмся чься
+SFX 125 чься жетесь чься
+SFX 125 чься жётесь чься
+SFX 125 чься жется чься
+SFX 125 чься жётся чься
+SFX 125 чься жешься чься
+SFX 125 чься жёшься чься
+SFX 125 ься ся [жшщч]аться
+SFX 125 ься ся ояться
+SFX 125 ься ся уться
+SFX 125 ять ем [аеу]ять
+SFX 125 ять ет [аеу]ять
+SFX 125 ять ете [аеу]ять
+SFX 125 ять ешь [аеу]ять
+SFX 125 ять им оять
+SFX 125 ять ит оять
+SFX 125 ять ите оять
+SFX 125 ять ишь оять
+SFX 125 ять ю [аеоу]ять
+SFX 125 ять ют [аеу]ять
+SFX 125 яться емся [аеу]яться
+SFX 125 яться етесь [аеу]яться
+SFX 125 яться ется [аеу]яться
+SFX 125 яться ешься [аеу]яться
+SFX 125 яться имся ояться
+SFX 125 яться итесь ояться
+SFX 125 яться ится ояться
+SFX 125 яться ишься ояться
+SFX 125 яться юсь [аеоу]яться
+SFX 125 яться ются [аеу]яться
+
+SFX 126 Y 2
+SFX 126 0 ative [^abdeilosty]
+SFX 126 0 ative [^aeiou]l
+
+SFX 127 Y 2
+SFX 127 0 ive [^e]
+SFX 127 0 ive [st]
+
+SFX 128 Y 1
+SFX 128 0 lative [aeiou]l
+
+SFX 129 Y 1
+SFX 129 0 tive [aio]
+
+SFX 130 Y 1
+SFX 130 b ptive b
+
+SFX 131 Y 1
+SFX 131 be ptive be
+
+SFX 132 Y 1
+SFX 132 d sive d
+
+SFX 133 Y 1
+SFX 133 de sive de
+
+SFX 134 Y 1
+SFX 134 e ative [^bcdkmst]e
+
+SFX 135 Y 2
+SFX 135 e ive [st]e
+SFX 135 e ive e
+
+SFX 136 Y 1
+SFX 136 e ptive me
+
+SFX 137 Y 1
+SFX 137 e tive ce
+
+SFX 138 Y 1
+SFX 138 ke cative ke
+
+SFX 139 Y 1
+SFX 139 y icative y
+
+SFX 140 Y 184
+SFX 140 ать ем дать
+SFX 140 ать ет дать
+SFX 140 ать ете дать
+SFX 140 ать ешь дать
+SFX 140 ать лем пать
+SFX 140 ать лет пать
+SFX 140 ать лете пать
+SFX 140 ать лешь пать
+SFX 140 ать лю пать
+SFX 140 ать лют пать
+SFX 140 ать у дать
+SFX 140 ать ут дать
+SFX 140 аться лемся паться
+SFX 140 аться летесь паться
+SFX 140 аться лется паться
+SFX 140 аться лешься паться
+SFX 140 аться люсь паться
+SFX 140 аться лются паться
+SFX 140 евать уем [жшщчц]евать
+SFX 140 евать уём [жшщчц]евать
+SFX 140 евать ует [жшщчц]евать
+SFX 140 евать уёт [жшщчц]евать
+SFX 140 евать уете [жшщчц]евать
+SFX 140 евать уёте [жшщчц]евать
+SFX 140 евать уешь [жшщчц]евать
+SFX 140 евать уёшь [жшщчц]евать
+SFX 140 евать ую [жшщчц]евать
+SFX 140 евать уют [жшщчц]евать
+SFX 140 евать юем [^жшщчц]евать
+SFX 140 евать юём [^жшщчц]евать
+SFX 140 евать юет [^жшщчц]евать
+SFX 140 евать юёт [^жшщчц]евать
+SFX 140 евать юете [^жшщчц]евать
+SFX 140 евать юёте [^жшщчц]евать
+SFX 140 евать юешь [^жшщчц]евать
+SFX 140 евать юёшь [^жшщчц]евать
+SFX 140 евать юю [^жшщчц]евать
+SFX 140 евать юют [^жшщчц]евать
+SFX 140 еваться уетесь [жшщчц]еваться
+SFX 140 еваться уётесь [жшщчц]еваться
+SFX 140 еваться уется [жшщчц]еваться
+SFX 140 еваться уётся [жшщчц]еваться
+SFX 140 еваться уешься [жшщчц]еваться
+SFX 140 еваться уёшься [жшщчц]еваться
+SFX 140 еваться уюсь [жшщчц]еваться
+SFX 140 еваться уются [жшщчц]еваться
+SFX 140 еваться юемся [^жшщчц]еваться
+SFX 140 еваться юёмся [^жшщчц]еваться
+SFX 140 еваться юетесь [^жшщчц]еваться
+SFX 140 еваться юётесь [^жшщчц]еваться
+SFX 140 еваться юется [^жшщчц]еваться
+SFX 140 еваться юётся [^жшщчц]еваться
+SFX 140 еваться юешься [^жшщчц]еваться
+SFX 140 еваться юёшься [^жшщчц]еваться
+SFX 140 еваться ююсь [^жшщчц]еваться
+SFX 140 еваться юются [^жшщчц]еваться
+SFX 140 ечь ягу лечь
+SFX 140 ечь ягут лечь
+SFX 140 ечь яжем лечь
+SFX 140 ечь яжет лечь
+SFX 140 ечь яжете лечь
+SFX 140 ечь яжешь лечь
+SFX 140 ечься ягусь лечься
+SFX 140 ечься ягутся лечься
+SFX 140 ечься яжемся лечься
+SFX 140 ечься яжетесь лечься
+SFX 140 ечься яжется лечься
+SFX 140 ечься яжешься лечься
+SFX 140 ить ьем [бвлп]ить
+SFX 140 ить ьём [бвлп]ить
+SFX 140 ить ьет [бвлп]ить
+SFX 140 ить ьёт [бвлп]ить
+SFX 140 ить ьете [бвлп]ить
+SFX 140 ить ьёте [бвлп]ить
+SFX 140 ить ьешь [бвлп]ить
+SFX 140 ить ьёшь [бвлп]ить
+SFX 140 ить ью [бвлп]ить
+SFX 140 ить ьют [бвлп]ить
+SFX 140 иться ьемся [бвлп]иться
+SFX 140 иться ьёмся [бвлп]иться
+SFX 140 иться ьетесь [бвлп]иться
+SFX 140 иться ьётесь [бвлп]иться
+SFX 140 иться ьется [бвлп]иться
+SFX 140 иться ьётся [бвлп]иться
+SFX 140 иться ьешься [бвлп]иться
+SFX 140 иться ьёшься [бвлп]иться
+SFX 140 иться ьюсь [бвлп]иться
+SFX 140 иться ьются [бвлп]иться
+SFX 140 овать уем овать
+SFX 140 овать уём овать
+SFX 140 овать ует овать
+SFX 140 овать уёт овать
+SFX 140 овать уете овать
+SFX 140 овать уёте овать
+SFX 140 овать уешь овать
+SFX 140 овать уёшь овать
+SFX 140 овать ую овать
+SFX 140 овать уют овать
+SFX 140 оваться уемся оваться
+SFX 140 оваться уёмся оваться
+SFX 140 оваться уетесь оваться
+SFX 140 оваться уётесь оваться
+SFX 140 оваться уется оваться
+SFX 140 оваться уётся оваться
+SFX 140 оваться уешься оваться
+SFX 140 оваться уёшься оваться
+SFX 140 оваться уюсь оваться
+SFX 140 оваться уются оваться
+SFX 140 ть вем жить
+SFX 140 ть вём жить
+SFX 140 ть вет жить
+SFX 140 ть вёт жить
+SFX 140 ть вете жить
+SFX 140 ть вёте жить
+SFX 140 ть вешь жить
+SFX 140 ть вёшь жить
+SFX 140 ть ву жить
+SFX 140 ть вут жить
+SFX 140 ть ем уть
+SFX 140 ть ет уть
+SFX 140 ть ете уть
+SFX 140 ть ешь уть
+SFX 140 ть нем деть
+SFX 140 ть нет деть
+SFX 140 ть нете деть
+SFX 140 ть нешь деть
+SFX 140 ть ну деть
+SFX 140 ть нут деть
+SFX 140 ть ю уть
+SFX 140 ть ют уть
+SFX 140 ться вемся житься
+SFX 140 ться вёмся житься
+SFX 140 ться ветесь житься
+SFX 140 ться вётесь житься
+SFX 140 ться вется житься
+SFX 140 ться вётся житься
+SFX 140 ться вешься житься
+SFX 140 ться вёшься житься
+SFX 140 ться вусь житься
+SFX 140 ться вутся житься
+SFX 140 ться емся уться
+SFX 140 ться етесь уться
+SFX 140 ться ется уться
+SFX 140 ться ешься уться
+SFX 140 ться немся деться
+SFX 140 ться нетесь деться
+SFX 140 ться нется деться
+SFX 140 ться нешься деться
+SFX 140 ться нусь деться
+SFX 140 ться нутся деться
+SFX 140 ться юсь уться
+SFX 140 ться ются уться
+SFX 140 хать дем хать
+SFX 140 хать дет хать
+SFX 140 хать дете хать
+SFX 140 хать дешь хать
+SFX 140 хать ду хать
+SFX 140 хать дут хать
+SFX 140 хаться демся хаться
+SFX 140 хаться детесь хаться
+SFX 140 хаться дется хаться
+SFX 140 хаться дешься хаться
+SFX 140 хаться дусь хаться
+SFX 140 хаться дутся хаться
+SFX 140 ять ем ять
+SFX 140 ять ём ять
+SFX 140 ять ет ять
+SFX 140 ять ёт ять
+SFX 140 ять ете ять
+SFX 140 ять ёте ять
+SFX 140 ять ешь ять
+SFX 140 ять ёшь ять
+SFX 140 ять ю ять
+SFX 140 ять ют ять
+SFX 140 яться емся яться
+SFX 140 яться ёмся яться
+SFX 140 яться етесь яться
+SFX 140 яться ётесь яться
+SFX 140 яться ется яться
+SFX 140 яться ётся яться
+SFX 140 яться ешься яться
+SFX 140 яться ёшься яться
+SFX 140 яться юсь яться
+SFX 140 яться ются яться
+
+SFX 141 Y 1
+SFX 141 0 atic [aeiou]m
+
+SFX 142 Y 4
+SFX 142 0 ic [^aeiou]m
+SFX 142 0 ic [^aelmrsy]
+SFX 142 0 ic [^ay]l
+SFX 142 0 ic [^e]r
+
+SFX 143 Y 3
+SFX 143 0 lic [ay]l
+SFX 143 0 tic [^u]s
+SFX 143 0 tic ma
+
+SFX 144 Y 1
+SFX 144 a ic [^m]a
+
+SFX 145 Y 4
+SFX 145 ce tific ce
+SFX 145 e atic me
+SFX 145 e ic [^b]le
+SFX 145 e ic [^clms]e
+
+SFX 146 Y 1
+SFX 146 er ric er
+
+SFX 147 Y 6
+SFX 147 le ic ble
+SFX 147 se tic se
+SFX 147 us ic us
+SFX 147 y etic thy
+SFX 147 y ic [^hs]y
+SFX 147 y ic [^t]hy
+
+SFX 148 Y 29
+SFX 148 y tic sy
+SFX 148 дить жу дить
+SFX 148 диться жусь диться
+SFX 148 зить жу зить
+SFX 148 зиться жусь зиться
+SFX 148 ить ат [жчшщ]ить
+SFX 148 ить лю [бвмпф]ить
+SFX 148 ить у [жчшщ]ить
+SFX 148 ить ю [аелнору]ить
+SFX 148 ить ят [^жчшщ]ить
+SFX 148 иться атся [жчшщ]иться
+SFX 148 иться люсь [бвмпф]иться
+SFX 148 иться усь [жчшщ]иться
+SFX 148 иться юсь [аелнору]иться
+SFX 148 иться ятся [^жчшщ]иться
+SFX 148 сить шу сить
+SFX 148 ситься шусь ситься
+SFX 148 стить щу стить
+SFX 148 ститься щусь ститься
+SFX 148 тить чу [^аеиоуыэюясч]тить
+SFX 148 титься чусь [^аеиоуыэюясч]титься
+SFX 148 ть м ить
+SFX 148 ть т ить
+SFX 148 ть шь ить
+SFX 148 ться мся иться
+SFX 148 ться шься иться
+SFX 148 ь е ить
+SFX 148 ься есь иться
+SFX 148 ься ся иться
+
+SFX 149 Y 6
+SFX 149 0 ations [^aeiou]l
+SFX 149 0 ations [^aeiou]m
+SFX 149 0 ations [^bdelmrstxy]
+SFX 149 0 ations [^e]r
+SFX 149 0 ations [^i]t
+SFX 149 0 ens [^ey]
+
+SFX 150 Y 2
+SFX 150 0 ions [^m]it
+SFX 150 0 ions [sx]
+
+SFX 151 Y 2
+SFX 151 0 lations [aiou]l
+SFX 151 0 mations [aeiou]m
+
+SFX 152 Y 1
+SFX 152 b ptions b
+
+SFX 153 Y 1
+SFX 153 be ptions be
+
+SFX 154 Y 1
+SFX 154 d sions d
+
+SFX 155 Y 1
+SFX 155 de sions de
+
+SFX 156 Y 2
+SFX 156 e ations [^bcdkmst]e
+SFX 156 e ations [iou]te
+
+SFX 157 Y 3
+SFX 157 e ions [^iou]te
+SFX 157 e ions [^o]se
+SFX 157 e ions e
+
+SFX 158 Y 3
+SFX 158 e itions ose
+SFX 158 e mations [^u]me
+SFX 158 e ptions ume
+
+SFX 159 Y 1
+SFX 159 e tions ce
+
+SFX 160 Y 1
+SFX 160 el ulsions el
+
+SFX 161 Y 1
+SFX 161 er rations er
+
+SFX 162 Y 2
+SFX 162 ke cations ke
+SFX 162 t ssions mit
+
+SFX 163 Y 4
+SFX 163 y ications y
+SFX 163 ый а нный
+SFX 163 ый о нный
+SFX 163 ый ы нный
+
+SFX 164 Y 1
+SFX 164 0 ally ic
+
+SFX 165 Y 6
+SFX 165 0 ly .
+SFX 165 0 ly [^cely]
+SFX 165 0 ly [^i]c
+SFX 165 0 ly [^l]e
+SFX 165 0 ly [aeiou][ly]
+SFX 165 0 ly [aeiou]le
+
+SFX 166 Y 1
+SFX 166 0 y [^aeiou]l
+
+SFX 167 Y 1
+SFX 167 e y [^aeiou]le
+
+SFX 168 Y 436
+SFX 168 y ily [^aeiou]y
+SFX 168 ать ем осать
+SFX 168 ать ём осать
+SFX 168 ать ем рвать
+SFX 168 ать ём рвать
+SFX 168 ать ет осать
+SFX 168 ать ёт осать
+SFX 168 ать ет рвать
+SFX 168 ать ёт рвать
+SFX 168 ать ете осать
+SFX 168 ать ёте осать
+SFX 168 ать ете рвать
+SFX 168 ать ёте рвать
+SFX 168 ать ешь осать
+SFX 168 ать ёшь осать
+SFX 168 ать ешь рвать
+SFX 168 ать ёшь рвать
+SFX 168 ать им жать
+SFX 168 ать им спать
+SFX 168 ать ит жать
+SFX 168 ать ит спать
+SFX 168 ать ите жать
+SFX 168 ать ите спать
+SFX 168 ать ишь жать
+SFX 168 ать ишь спать
+SFX 168 ать лю спать
+SFX 168 ать у осать
+SFX 168 ать у рвать
+SFX 168 ать ут осать
+SFX 168 ать ут рвать
+SFX 168 ать ят спать
+SFX 168 аться емся осаться
+SFX 168 аться ёмся осаться
+SFX 168 аться емся рваться
+SFX 168 аться ёмся рваться
+SFX 168 аться етесь осаться
+SFX 168 аться ётесь осаться
+SFX 168 аться етесь рваться
+SFX 168 аться ётесь рваться
+SFX 168 аться ется осаться
+SFX 168 аться ётся осаться
+SFX 168 аться ется рваться
+SFX 168 аться ётся рваться
+SFX 168 аться ешься осаться
+SFX 168 аться ёшься осаться
+SFX 168 аться ешься рваться
+SFX 168 аться ёшься рваться
+SFX 168 аться имся жаться
+SFX 168 аться имся спаться
+SFX 168 аться итесь жаться
+SFX 168 аться итесь спаться
+SFX 168 аться ится жаться
+SFX 168 аться ится спаться
+SFX 168 аться ишься жаться
+SFX 168 аться ишься спаться
+SFX 168 аться люсь спаться
+SFX 168 аться усь осаться
+SFX 168 аться усь рваться
+SFX 168 аться утся осаться
+SFX 168 аться утся рваться
+SFX 168 аться ятся спаться
+SFX 168 вать овем звать
+SFX 168 вать овём звать
+SFX 168 вать овет звать
+SFX 168 вать овёт звать
+SFX 168 вать овете звать
+SFX 168 вать овёте звать
+SFX 168 вать овешь звать
+SFX 168 вать овёшь звать
+SFX 168 вать ову звать
+SFX 168 вать овут звать
+SFX 168 ваться овемся зваться
+SFX 168 ваться овёмся зваться
+SFX 168 ваться оветесь зваться
+SFX 168 ваться овётесь зваться
+SFX 168 ваться овется зваться
+SFX 168 ваться овётся зваться
+SFX 168 ваться овешься зваться
+SFX 168 ваться овёшься зваться
+SFX 168 ваться овусь зваться
+SFX 168 ваться овутся зваться
+SFX 168 деть жу деть
+SFX 168 деться жусь деться
+SFX 168 есть тем честь
+SFX 168 есть тём честь
+SFX 168 есть тет честь
+SFX 168 есть тёт честь
+SFX 168 есть тете честь
+SFX 168 есть тёте честь
+SFX 168 есть тешь честь
+SFX 168 есть тёшь честь
+SFX 168 есть ту честь
+SFX 168 есть тут честь
+SFX 168 есть ядем сесть
+SFX 168 есть ядет сесть
+SFX 168 есть ядете сесть
+SFX 168 есть ядешь сесть
+SFX 168 есть яду сесть
+SFX 168 есть ядут сесть
+SFX 168 еть им [дмнпрст]еть
+SFX 168 еть ит [дмнпрст]еть
+SFX 168 еть ите [дмнпрст]еть
+SFX 168 еть ишь [дмнпрст]еть
+SFX 168 еть лю петь
+SFX 168 еть ю реть
+SFX 168 еть ят [дмнпрст]еть
+SFX 168 еться имся [дрт]еться
+SFX 168 еться итесь [дрт]еться
+SFX 168 еться ится [дрт]еться
+SFX 168 еться ишься [дрт]еться
+SFX 168 еться люсь петься
+SFX 168 еться юсь реться
+SFX 168 еться ятся [дрт]еться
+SFX 168 жать гу жать
+SFX 168 жать гут жать
+SFX 168 жаться гусь жаться
+SFX 168 жаться гутся жаться
+SFX 168 зать жем зать
+SFX 168 зать жет зать
+SFX 168 зать жете зать
+SFX 168 зать жешь зать
+SFX 168 зать жу зать
+SFX 168 зать жут зать
+SFX 168 заться жемся заться
+SFX 168 заться жетесь заться
+SFX 168 заться жется заться
+SFX 168 заться жешься заться
+SFX 168 заться жусь заться
+SFX 168 заться жутся заться
+SFX 168 и ем расти
+SFX 168 и ём расти
+SFX 168 и ет расти
+SFX 168 и ёт расти
+SFX 168 и ете расти
+SFX 168 и ёте расти
+SFX 168 и ешь расти
+SFX 168 и ёшь расти
+SFX 168 и у расти
+SFX 168 и ут расти
+SFX 168 ить ем лить
+SFX 168 ить ет лить
+SFX 168 ить ете лить
+SFX 168 ить ешь лить
+SFX 168 ить ю лить
+SFX 168 ить ют лить
+SFX 168 кать чем [^с]кать
+SFX 168 кать чет [^с]кать
+SFX 168 кать чете [^с]кать
+SFX 168 кать чешь [^с]кать
+SFX 168 кать чу [^с]кать
+SFX 168 кать чут [^с]кать
+SFX 168 каться чемся [^с]каться
+SFX 168 каться четесь [^с]каться
+SFX 168 каться чется [^с]каться
+SFX 168 каться чешься [^с]каться
+SFX 168 каться чусь [^с]каться
+SFX 168 каться чутся [^с]каться
+SFX 168 нать оним гнать
+SFX 168 нать онит гнать
+SFX 168 нать оните гнать
+SFX 168 нать онишь гнать
+SFX 168 нать оню гнать
+SFX 168 нать онят гнать
+SFX 168 наться онимся гнаться
+SFX 168 наться онитесь гнаться
+SFX 168 наться онится гнаться
+SFX 168 наться онишься гнаться
+SFX 168 наться онюсь гнаться
+SFX 168 наться онятся гнаться
+SFX 168 рать ерем [бд]рать
+SFX 168 рать ерём [бд]рать
+SFX 168 рать ерет [бд]рать
+SFX 168 рать ерёт [бд]рать
+SFX 168 рать ерете [бд]рать
+SFX 168 рать ерёте [бд]рать
+SFX 168 рать ерешь [бд]рать
+SFX 168 рать ерёшь [бд]рать
+SFX 168 рать еру [бд]рать
+SFX 168 рать ерут [бд]рать
+SFX 168 рать рем [^бд]рать
+SFX 168 рать рём [^бд]рать
+SFX 168 рать рет [^бд]рать
+SFX 168 рать рёт [^бд]рать
+SFX 168 рать рете [^бд]рать
+SFX 168 рать рёте [^бд]рать
+SFX 168 рать решь [^бд]рать
+SFX 168 рать рёшь [^бд]рать
+SFX 168 рать ру [^бд]рать
+SFX 168 рать рут [^бд]рать
+SFX 168 раться еремся [бд]раться
+SFX 168 раться ерёмся [бд]раться
+SFX 168 раться еретесь [бд]раться
+SFX 168 раться ерётесь [бд]раться
+SFX 168 раться ерется [бд]раться
+SFX 168 раться ерётся [бд]раться
+SFX 168 раться ерешься [бд]раться
+SFX 168 раться ерёшься [бд]раться
+SFX 168 раться ерусь [бд]раться
+SFX 168 раться ерутся [бд]раться
+SFX 168 раться ремся [^бд]раться
+SFX 168 раться рёмся [^бд]раться
+SFX 168 раться ретесь [^бд]раться
+SFX 168 раться рётесь [^бд]раться
+SFX 168 раться рется [^бд]раться
+SFX 168 раться рётся [^бд]раться
+SFX 168 раться решься [^бд]раться
+SFX 168 раться рёшься [^бд]раться
+SFX 168 раться русь [^бд]раться
+SFX 168 раться рутся [^бд]раться
+SFX 168 сать шем [^о]сать
+SFX 168 сать шет [^о]сать
+SFX 168 сать шете [^о]сать
+SFX 168 сать шешь [^о]сать
+SFX 168 сать шу [^о]сать
+SFX 168 сать шут [^о]сать
+SFX 168 саться шемся [^о]саться
+SFX 168 саться шетесь [^о]саться
+SFX 168 саться шется [^о]саться
+SFX 168 саться шешься [^о]саться
+SFX 168 саться шусь [^о]саться
+SFX 168 саться шутся [^о]саться
+SFX 168 сеть шу сеть
+SFX 168 скать щем скать
+SFX 168 скать щет скать
+SFX 168 скать щете скать
+SFX 168 скать щешь скать
+SFX 168 скать щу скать
+SFX 168 скать щут скать
+SFX 168 скаться щемся скаться
+SFX 168 скаться щетесь скаться
+SFX 168 скаться щется скаться
+SFX 168 скаться щешься скаться
+SFX 168 скаться щусь скаться
+SFX 168 скаться щутся скаться
+SFX 168 слать шлем слать
+SFX 168 слать шлём слать
+SFX 168 слать шлет слать
+SFX 168 слать шлёт слать
+SFX 168 слать шлете слать
+SFX 168 слать шлёте слать
+SFX 168 слать шлешь слать
+SFX 168 слать шлёшь слать
+SFX 168 слать шлю слать
+SFX 168 слать шлют слать
+SFX 168 слаться шлемся слаться
+SFX 168 слаться шлёмся слаться
+SFX 168 слаться шлетесь слаться
+SFX 168 слаться шлётесь слаться
+SFX 168 слаться шлется слаться
+SFX 168 слаться шлётся слаться
+SFX 168 слаться шлешься слаться
+SFX 168 слаться шлёшься слаться
+SFX 168 слаться шлюсь слаться
+SFX 168 слаться шлются слаться
+SFX 168 сти бем рести
+SFX 168 сти бём рести
+SFX 168 сти бет рести
+SFX 168 сти бёт рести
+SFX 168 сти бете рести
+SFX 168 сти бёте рести
+SFX 168 сти бешь рести
+SFX 168 сти бёшь рести
+SFX 168 сти бу рести
+SFX 168 сти бут рести
+SFX 168 сти дем вести
+SFX 168 сти дём вести
+SFX 168 сти дет вести
+SFX 168 сти дёт вести
+SFX 168 сти дете вести
+SFX 168 сти дёте вести
+SFX 168 сти дешь вести
+SFX 168 сти дёшь вести
+SFX 168 сти ду вести
+SFX 168 сти дут вести
+SFX 168 сти тем лести
+SFX 168 сти тём лести
+SFX 168 сти тет лести
+SFX 168 сти тёт лести
+SFX 168 сти тете лести
+SFX 168 сти тёте лести
+SFX 168 сти тешь лести
+SFX 168 сти тёшь лести
+SFX 168 сти ту лести
+SFX 168 сти тут лести
+SFX 168 стись демся вестись
+SFX 168 стись дёмся вестись
+SFX 168 стись детесь вестись
+SFX 168 стись дётесь вестись
+SFX 168 стись дется вестись
+SFX 168 стись дётся вестись
+SFX 168 стись дешься вестись
+SFX 168 стись дёшься вестись
+SFX 168 стись дусь вестись
+SFX 168 стись дутся вестись
+SFX 168 стись темся лестись
+SFX 168 стись тёмся лестись
+SFX 168 стись тетесь лестись
+SFX 168 стись тётесь лестись
+SFX 168 стись тется лестись
+SFX 168 стись тётся лестись
+SFX 168 стись тешься лестись
+SFX 168 стись тёшься лестись
+SFX 168 стись тусь лестись
+SFX 168 стись тутся лестись
+SFX 168 сть дем асть
+SFX 168 сть дём асть
+SFX 168 сть дет асть
+SFX 168 сть дёт асть
+SFX 168 сть дете асть
+SFX 168 сть дёте асть
+SFX 168 сть дешь асть
+SFX 168 сть дёшь асть
+SFX 168 сть ду асть
+SFX 168 сть дут асть
+SFX 168 сться демся асться
+SFX 168 сться дёмся асться
+SFX 168 сться детесь асться
+SFX 168 сться дётесь асться
+SFX 168 сться дется асться
+SFX 168 сться дётся асться
+SFX 168 сться дешься асться
+SFX 168 сться дёшься асться
+SFX 168 сться дусь асться
+SFX 168 сться дутся асться
+SFX 168 тать чем [^с]тать
+SFX 168 тать чет [^с]тать
+SFX 168 тать чете [^с]тать
+SFX 168 тать чешь [^с]тать
+SFX 168 тать чу [^с]тать
+SFX 168 тать чут [^с]тать
+SFX 168 таться чемся [^с]таться
+SFX 168 таться четесь [^с]таться
+SFX 168 таться чется [^с]таться
+SFX 168 таться чешься [^с]таться
+SFX 168 таться чусь [^с]таться
+SFX 168 таться чутся [^с]таться
+SFX 168 ть вем лыть
+SFX 168 ть вём лыть
+SFX 168 ть вет лыть
+SFX 168 ть вёт лыть
+SFX 168 ть вете лыть
+SFX 168 ть вёте лыть
+SFX 168 ть вешь лыть
+SFX 168 ть вёшь лыть
+SFX 168 ть ву лыть
+SFX 168 ть вут лыть
+SFX 168 ть дим дать
+SFX 168 ть дите дать
+SFX 168 ть дут дать
+SFX 168 ть ем лезть
+SFX 168 ть ет лезть
+SFX 168 ть ете лезть
+SFX 168 ть ешь лезть
+SFX 168 ть м дать
+SFX 168 ть нем стать
+SFX 168 ть нет стать
+SFX 168 ть нете стать
+SFX 168 ть нешь стать
+SFX 168 ть ну стать
+SFX 168 ть нут стать
+SFX 168 ть ст дать
+SFX 168 ть у лезть
+SFX 168 ть ут лезть
+SFX 168 ть шь дать
+SFX 168 ться вемся лыться
+SFX 168 ться вёмся лыться
+SFX 168 ться ветесь лыться
+SFX 168 ться вётесь лыться
+SFX 168 ться вется лыться
+SFX 168 ться вётся лыться
+SFX 168 ться вешься лыться
+SFX 168 ться вёшься лыться
+SFX 168 ться вусь лыться
+SFX 168 ться вутся лыться
+SFX 168 ться димся даться
+SFX 168 ться дитесь даться
+SFX 168 ться дутся даться
+SFX 168 ться мся даться
+SFX 168 ться немся статься
+SFX 168 ться нетесь статься
+SFX 168 ться нется статься
+SFX 168 ться нешься статься
+SFX 168 ться нусь статься
+SFX 168 ться нутся статься
+SFX 168 ться стся даться
+SFX 168 ться шься даться
+SFX 168 хать шем хать
+SFX 168 хать шет хать
+SFX 168 хать шете хать
+SFX 168 хать шешь хать
+SFX 168 хать шу хать
+SFX 168 хать шут хать
+SFX 168 хаться шемся хаться
+SFX 168 хаться шетесь хаться
+SFX 168 хаться шется хаться
+SFX 168 хаться шешься хаться
+SFX 168 хаться шусь хаться
+SFX 168 хаться шутся хаться
+SFX 168 чь гу чь
+SFX 168 чь гут чь
+SFX 168 чь жем чь
+SFX 168 чь жет чь
+SFX 168 чь жете чь
+SFX 168 чь жешь чь
+SFX 168 ыть удем быть
+SFX 168 ыть удет быть
+SFX 168 ыть удете быть
+SFX 168 ыть удешь быть
+SFX 168 ыть уду быть
+SFX 168 ыть удут быть
+SFX 168 ыться удемся быться
+SFX 168 ыться удетесь быться
+SFX 168 ыться удется быться
+SFX 168 ыться удешься быться
+SFX 168 ыться удусь быться
+SFX 168 ыться удутся быться
+SFX 168 ять нем мять
+SFX 168 ять нём мять
+SFX 168 ять нет мять
+SFX 168 ять нёт мять
+SFX 168 ять нете мять
+SFX 168 ять нёте мять
+SFX 168 ять нешь мять
+SFX 168 ять нёшь мять
+SFX 168 ять ну мять
+SFX 168 ять нут мять
+SFX 168 яться немся мяться
+SFX 168 яться нёмся мяться
+SFX 168 яться нетесь мяться
+SFX 168 яться нётесь мяться
+SFX 168 яться нется мяться
+SFX 168 яться нётся мяться
+SFX 168 яться нешься мяться
+SFX 168 яться нёшься мяться
+SFX 168 яться нусь мяться
+SFX 168 яться нутся мяться
+
+SFX 169 Y 1
+SFX 169 0 by [^aeio][aeiou]b
+
+SFX 170 Y 4
+SFX 170 0 dy [^aeio][aeiou]d
+SFX 170 0 ers [^ey]
+SFX 170 0 ers [aeiou]y
+SFX 170 0 ey [aiouy]
+
+SFX 171 Y 1
+SFX 171 0 fy [^aeio][aeiou]f
+
+SFX 172 Y 1
+SFX 172 0 gy [^aeio][aeiou]g
+
+SFX 173 Y 2
+SFX 173 0 ky [^aeio][aeiou]c
+SFX 173 0 ky [^aeio][aeiou]k
+
+SFX 174 Y 1
+SFX 174 0 ly [^aeio][aeiou]l
+
+SFX 175 Y 1
+SFX 175 0 my [^aeio][aeiou]m
+
+SFX 176 Y 1
+SFX 176 0 ny [^aeio][aiou]n
+
+SFX 177 Y 1
+SFX 177 0 py [^aeio][aeiou]p
+
+SFX 178 Y 2
+SFX 178 0 rs e
+SFX 178 0 ry [^aeio][aiou]r
+
+SFX 179 Y 1
+SFX 179 0 sy [^aeio][aeiou]s
+
+SFX 180 Y 1
+SFX 180 0 ty [^aeio][aiou]t
+
+SFX 181 Y 6
+SFX 181 0 vy [^aeio][aeiou]v
+SFX 181 0 y [^aebcdfgiklmnoprstuvyz]
+SFX 181 0 y [^aeio]e[nrt]
+SFX 181 0 y [^aeiou][bcdfgklmnprstvz]
+SFX 181 0 y [aeio][aeiou][bcdfgklmnprstvz]
+SFX 181 0 y [aeiouy]e
+
+SFX 182 Y 1
+SFX 182 0 zy [^aeio][aeiou]z
+
+SFX 183 Y 1
+SFX 183 e y [^aeiouy]e
+
+SFX 184 Y 2
+SFX 184 0 ible [^e]
+SFX 184 0 ible [aeiou]e
+
+SFX 185 Y 1
+SFX 185 e ible [^aeiou]e
+
+SFX 186 Y 1
+SFX 186 0 d e
+
+SFX 187 Y 1
+SFX 187 0 ed [^aeiou][cl]
+
+SFX 188 Y 1
+SFX 188 0 ed [^ecly]
+
+SFX 189 Y 1
+SFX 189 0 ed [aeio][aeiou][cl]
+
+SFX 190 Y 1
+SFX 190 0 ed [aeiou]y
+
+SFX 191 Y 5
+SFX 191 0 ing [^aeiou][cl]
+SFX 191 0 ing [^ecl]
+SFX 191 0 ing [aeio][aeiou][cl]
+SFX 191 0 ing [eoy]e
+SFX 191 0 ked [^aeio][aeiou]c
+
+SFX 192 Y 2
+SFX 192 0 king [^aeio][aeiou]c
+SFX 192 0 led [^aeio][aeiou]l
+
+SFX 193 Y 1
+SFX 193 0 ling [^aeio][aeiou]l
+
+SFX 194 Y 3
+SFX 194 e ing [^eioy]e
+SFX 194 ie ying ie
+SFX 194 y ied [^aeiou]y
+
+SFX 195 Y 5
+SFX 195 0 ability [^aeiou][cl]
+SFX 195 0 ability [^cely]
+SFX 195 0 ability [acegilou]e
+SFX 195 0 ability [aeio][aeiou][cl]
+SFX 195 0 ability [aeiou]y
+
+SFX 196 Y 1
+SFX 196 0 kability [^aeio][aeiou]c
+
+SFX 197 Y 1
+SFX 197 0 lability [^aeio][aeiou]l
+
+SFX 198 Y 1
+SFX 198 e ability [^acegilou]e
+
+SFX 199 Y 1
+SFX 199 y iability [^aeiou]y
+
+SFX 200 Y 9
+SFX 200 0 bedly [^aeio][aeiou]b
+SFX 200 0 dedly [^aeio][aeiou]d
+SFX 200 0 dly e
+SFX 200 0 edly [^aeio]e[nrt]
+SFX 200 0 edly [^aeiou][bcdfgklmnprstvz]
+SFX 200 0 edly [^ebcdfgklmnprstvyz]
+SFX 200 0 edly [aeio][aeiou][bcdfgklmnprstvz]
+SFX 200 0 edly [aeiou]y
+SFX 200 0 fedly [^aeio][aeiou]f
+
+SFX 201 Y 1
+SFX 201 0 gedly [^aeio][aeiou]g
+
+SFX 202 Y 9
+SFX 202 0 kedly [^aeio][aeiou]c
+SFX 202 0 kedly [^aeio][aeiou]k
+SFX 202 0 ledly [^aeio][aeiou]l
+SFX 202 0 medly [^aeio][aeiou]m
+SFX 202 0 nedly [^aeio][aiou]n
+SFX 202 0 pedly [^aeio][aeiou]p
+SFX 202 0 redly [^aeio][aiou]r
+SFX 202 0 sedly [^aeio][aeiou]s
+SFX 202 0 tedly [^aeio][aiou]t
+
+SFX 203 Y 2
+SFX 203 0 vedly [^aeio][aeiou]v
+SFX 203 0 zedly [^aeio][aeiou]z
+
+SFX 204 Y 1
+SFX 204 y iedly [^aeiou]y
+
+SFX 205 Y 21
+SFX 205 0 bedness [^aeio][aeiou]b
+SFX 205 0 dedness [^aeio][aeiou]d
+SFX 205 0 dness e
+SFX 205 0 edness [^aeio]e[nrt]
+SFX 205 0 edness [^aeiou][bcdfgklmnprstvz]
+SFX 205 0 edness [^ebcdfgklmnprstvyz]
+SFX 205 0 edness [aeio][aeiou][bcdfgklmnprstvz]
+SFX 205 0 edness [aeiou]y
+SFX 205 0 fedness [^aeio][aeiou]f
+SFX 205 0 gedness [^aeio][aeiou]g
+SFX 205 0 kedness [^aeio][aeiou]c
+SFX 205 0 kedness [^aeio][aeiou]k
+SFX 205 0 ledness [^aeio][aeiou]l
+SFX 205 0 medness [^aeio][aeiou]m
+SFX 205 0 nedness [^aeio][aiou]n
+SFX 205 0 pedness [^aeio][aeiou]p
+SFX 205 0 redness [^aeio][aiou]r
+SFX 205 0 sedness [^aeio][aeiou]s
+SFX 205 0 tedness [^aeio][aiou]t
+SFX 205 0 vedness [^aeio][aeiou]v
+SFX 205 0 zedness [^aeio][aeiou]z
+
+SFX 206 Y 1
+SFX 206 y iedness [^aeiou]y
+
+SFX 207 Y 2
+SFX 207 0 fully [^y]
+SFX 207 0 fully [aeiou]y
+
+SFX 208 Y 1
+SFX 208 y ifully [^aeiou]y
+
+SFX 209 Y 6
+SFX 209 0 ingly [^aeiou][cl]
+SFX 209 0 ingly [^ecl]
+SFX 209 0 ingly [aeio][aeiou][cl]
+SFX 209 0 ingly [eoy]e
+SFX 209 0 kingly [^aeio][aeiou]c
+SFX 209 0 lingly [^aeio][aeiou]l
+
+SFX 210 Y 2
+SFX 210 e ingly [^eioy]e
+SFX 210 ie yingly ie
+
+SFX 211 Y 5
+SFX 211 0 ably [^aeiou][cl]
+SFX 211 0 ably [^cely]
+SFX 211 0 ably [acegilou]e
+SFX 211 0 ably [aeio][aeiou][cl]
+SFX 211 0 ably [aeiou]y
+
+SFX 212 Y 2
+SFX 212 0 kably [^aeio][aeiou]c
+SFX 212 0 lably [^aeio][aeiou]l
+
+SFX 213 Y 2
+SFX 213 e ably [^acegilou]e
+SFX 213 y iably [^aeiou]y
+
+SFX 214 Y 12
+SFX 214 0 man [^aeiou][bdklmnt]e
+SFX 214 0 man [^bdeknmt]
+SFX 214 0 man [^bdklmnt]e
+SFX 214 0 man's [^aeiou][bdklmnt]e
+SFX 214 0 man's [^bdeknmt]
+SFX 214 0 man's [^bdklmnt]e
+SFX 214 0 men [^aeiou][bdklmnt]e
+SFX 214 0 men [^bdeknmt]
+SFX 214 0 men [^bdklmnt]e
+SFX 214 0 men's [^aeiou][bdklmnt]e
+SFX 214 0 men's [^bdeknmt]
+SFX 214 0 men's [^bdklmnt]e
+
+SFX 215 Y 8
+SFX 215 0 sman [aeiou][bdklmnt]e
+SFX 215 0 sman [bdknmt]
+SFX 215 0 sman's [aeiou][bdklmnt]e
+SFX 215 0 sman's [bdknmt]
+SFX 215 0 smen [aeiou][bdklmnt]e
+SFX 215 0 smen [bdknmt]
+SFX 215 0 smen's [aeiou][bdklmnt]e
+SFX 215 0 smen's [bdknmt]
+
+SFX 216 Y 1
+SFX 216 0 ation [^aeiou]l
+
+SFX 217 Y 1
+SFX 217 0 ation [^aelry]
+
+SFX 218 Y 1
+SFX 218 0 ation [^e]r
+
+SFX 219 Y 3
+SFX 219 0 ations [^aeiou]l
+SFX 219 0 ations [^aelry]
+SFX 219 0 ations [^e]r
+
+SFX 220 Y 1
+SFX 220 0 lation [aiou]l
+
+SFX 221 Y 1
+SFX 221 0 lations [aiou]l
+
+SFX 222 Y 2
+SFX 222 0 tion a
+SFX 222 0 tions a
+
+SFX 223 Y 2
+SFX 223 e ation [^ckt]e
+SFX 223 e ation [iou]te
+
+SFX 224 Y 3
+SFX 224 e ations [^ckt]e
+SFX 224 e ations [iou]te
+SFX 224 e ion [^iou]te
+
+SFX 225 Y 1
+SFX 225 e ions [^iou]te
+
+SFX 226 Y 1
+SFX 226 e tion ce
+
+SFX 227 Y 2
+SFX 227 e tions ce
+SFX 227 el ulsion el
+
+SFX 228 Y 2
+SFX 228 el ulsions el
+SFX 228 er ration er
+
+SFX 229 Y 2
+SFX 229 er rations er
+SFX 229 ke cation ke
+
+SFX 230 Y 1
+SFX 230 ke cations ke
+
+SFX 231 Y 3
+SFX 231 y ation py
+SFX 231 y ations py
+SFX 231 y ication [^p]y
+
+SFX 232 Y 1
+SFX 232 y ications [^p]y
+
+SFX 233 Y 3
+SFX 233 0 ally [^aebcrtxmy]
+SFX 233 0 ally [^ipux]t
+SFX 233 0 ally [^u]m
+
+SFX 234 Y 1
+SFX 234 0 ially [bcrx]
+
+SFX 235 Y 1
+SFX 235 0 lly a
+
+SFX 236 Y 1
+SFX 236 0 tally [iu]t
+
+SFX 237 Y 1
+SFX 237 0 ually [px]t
+
+SFX 238 Y 1
+SFX 238 e ally [^bcgv]e
+
+SFX 239 Y 1
+SFX 239 e ially [bcgv]e
+
+SFX 240 Y 1
+SFX 240 um ally um
+
+SFX 241 Y 1
+SFX 241 y ally ty
+
+SFX 242 Y 1
+SFX 242 y ially [^t]y
+
+SFX 243 Y 4
+SFX 243 0 ess ll
+SFX 243 0 less [^l]l
+SFX 243 0 less [^ly]
+SFX 243 0 less [aeiou]y
+
+SFX 244 Y 1
+SFX 244 y iless [^aeiou]y
+
+SFX 245 Y 8
+SFX 245 0 isation [^aemsy]
+SFX 245 0 isation [^i]s
+SFX 245 0 isation [^u]m
+SFX 245 0 isation [aeiou]y
+SFX 245 0 isations [^aemsy]
+SFX 245 0 isations [^i]s
+SFX 245 0 isations [^u]m
+SFX 245 0 isations [aeiou]y
+
+SFX 246 Y 2
+SFX 246 0 tisation a
+SFX 246 0 tisations a
+
+SFX 247 Y 4
+SFX 247 e isation [^l]e
+SFX 247 e isation [aeiou]le
+SFX 247 e isations [^l]e
+SFX 247 e isations [aeiou]le
+
+SFX 248 Y 2
+SFX 248 le ilisation [^aeiou]le
+SFX 248 le ilisations [^aeiou]le
+
+SFX 249 Y 2
+SFX 249 s sation is
+SFX 249 s sations is
+
+SFX 250 Y 2
+SFX 250 um isation um
+SFX 250 um isations um
+
+SFX 251 Y 2
+SFX 251 y isation [^aeiou]y
+SFX 251 y isations [^aeiou]y
+
+SFX 252 Y 1
+SFX 252 0 er [^aeiou][cl]
+
+SFX 253 Y 1
+SFX 253 0 er [^ecly]
+
+SFX 254 Y 1
+SFX 254 0 er [aeio][aeiou][cl]
+
+SFX 255 Y 1
+SFX 255 0 er [aeiou]y
+
+SFX 256 Y 2
+SFX 256 0 ers [^aeiou][cl]
+SFX 256 0 er's [^aeiou][cl]
+
+SFX 257 Y 2
+SFX 257 0 ers [^ecly]
+SFX 257 0 er's [^ecly]
+
+SFX 258 Y 2
+SFX 258 0 ers [aeio][aeiou][cl]
+SFX 258 0 er's [aeio][aeiou][cl]
+
+SFX 259 Y 2
+SFX 259 0 ers [aeiou]y
+SFX 259 0 er's [aeiou]y
+
+SFX 260 Y 1
+SFX 260 0 ker [^aeio][aeiou]c
+
+SFX 261 Y 2
+SFX 261 0 kers [^aeio][aeiou]c
+SFX 261 0 ker's [^aeio][aeiou]c
+
+SFX 262 Y 1
+SFX 262 0 ler [^aeio][aeiou]l
+
+SFX 263 Y 2
+SFX 263 0 lers [^aeio][aeiou]l
+SFX 263 0 ler's [^aeio][aeiou]l
+
+SFX 264 Y 1
+SFX 264 0 r e
+
+SFX 265 Y 2
+SFX 265 0 rs e
+SFX 265 0 r's e
+
+SFX 266 Y 1
+SFX 266 y ier [^aeiou]y
+
+SFX 267 Y 2
+SFX 267 y iers [^aeiou]y
+SFX 267 y ier's [^aeiou]y
+
+SFX 268 Y 12
+SFX 268 0 iser [^aemsy]
+SFX 268 0 iser [^i]s
+SFX 268 0 iser [^u]m
+SFX 268 0 iser [aeiou]y
+SFX 268 0 isers [^aemsy]
+SFX 268 0 iser's [^aemsy]
+SFX 268 0 isers [^i]s
+SFX 268 0 iser's [^i]s
+SFX 268 0 isers [^u]m
+SFX 268 0 iser's [^u]m
+SFX 268 0 isers [aeiou]y
+SFX 268 0 iser's [aeiou]y
+
+SFX 269 Y 3
+SFX 269 0 tiser a
+SFX 269 0 tisers a
+SFX 269 0 tiser's a
+
+SFX 270 Y 15
+SFX 270 e iser [^l]e
+SFX 270 e iser [aeiou]le
+SFX 270 e isers [^l]e
+SFX 270 e iser's [^l]e
+SFX 270 e isers [aeiou]le
+SFX 270 e iser's [aeiou]le
+SFX 270 le iliser [^aeiou]le
+SFX 270 le ilisers [^aeiou]le
+SFX 270 le iliser's [^aeiou]le
+SFX 270 s ser is
+SFX 270 s sers is
+SFX 270 s ser's is
+SFX 270 um iser um
+SFX 270 um isers um
+SFX 270 um iser's um
+
+SFX 271 Y 3
+SFX 271 y iser [^aeiou]y
+SFX 271 y isers [^aeiou]y
+SFX 271 y iser's [^aeiou]y
+
+SFX 272 Y 8
+SFX 272 0 isability [^aemsy]
+SFX 272 0 isability [^i]s
+SFX 272 0 isability [^u]m
+SFX 272 0 isability [aeiou]y
+SFX 272 0 isable [^aemsy]
+SFX 272 0 isable [^i]s
+SFX 272 0 isable [^u]m
+SFX 272 0 isable [aeiou]y
+
+SFX 273 Y 2
+SFX 273 0 tisability a
+SFX 273 0 tisable a
+
+SFX 274 Y 10
+SFX 274 e isability [^l]e
+SFX 274 e isability [aeiou]le
+SFX 274 e isable [^l]e
+SFX 274 e isable [aeiou]le
+SFX 274 le ilisability [^aeiou]le
+SFX 274 le ilisable [^aeiou]le
+SFX 274 s sability is
+SFX 274 s sable is
+SFX 274 um isability um
+SFX 274 um isable um
+
+SFX 275 Y 2
+SFX 275 y isability [^aeiou]y
+SFX 275 y isable [^aeiou]y
+
+SFX 276 Y 15
+SFX 276 0 ativeness [^abdeilosty]
+SFX 276 0 ativeness [^aeiou]l
+SFX 276 0 iveness [st]
+SFX 276 0 lativeness [aeiou]l
+SFX 276 0 tiveness [aio]
+SFX 276 b ptiveness b
+SFX 276 be ptiveness be
+SFX 276 d siveness d
+SFX 276 de siveness de
+SFX 276 e ativeness [^bcdkmst]e
+SFX 276 e iveness [st]e
+SFX 276 e ptiveness me
+SFX 276 e tiveness ce
+SFX 276 ke cativeness ke
+SFX 276 y icativeness y
+
+SFX 277 Y 2
+SFX 277 0 atively [^abdeilosty]
+SFX 277 0 atively [^aeiou]l
+
+SFX 278 Y 1
+SFX 278 0 ively [st]
+
+SFX 279 Y 1
+SFX 279 0 latively [aeiou]l
+
+SFX 280 Y 1
+SFX 280 0 tively [aio]
+
+SFX 281 Y 1
+SFX 281 b ptively b
+
+SFX 282 Y 1
+SFX 282 be ptively be
+
+SFX 283 Y 1
+SFX 283 d sively d
+
+SFX 284 Y 1
+SFX 284 de sively de
+
+SFX 285 Y 1
+SFX 285 e atively [^bcdkmst]e
+
+SFX 286 Y 1
+SFX 286 e ively [st]e
+
+SFX 287 Y 1
+SFX 287 e ptively me
+
+SFX 288 Y 1
+SFX 288 e tively ce
+
+SFX 289 Y 1
+SFX 289 ke catively ke
+
+SFX 290 Y 1
+SFX 290 y icatively y
+
+SFX 291 Y 1
+SFX 291 0 atical [aeiou]m
+
+SFX 292 Y 3
+SFX 292 0 ical [^aeiou]m
+SFX 292 0 ical [^aemry]
+SFX 292 0 ical [^e]r
+
+SFX 293 Y 1
+SFX 293 0 tical ma
+
+SFX 294 Y 1
+SFX 294 a ical [^m]a
+
+SFX 295 Y 1
+SFX 295 e ical e
+
+SFX 296 Y 1
+SFX 296 er rical er
+
+SFX 297 Y 1
+SFX 297 y ical y
+
+SFX 298 Y 8
+SFX 298 0 ational [^aeiou]l
+SFX 298 0 ational [^bdelrstxy]
+SFX 298 0 ational [^e]r
+SFX 298 0 ational nt
+SFX 298 0 ationally [^aeiou]l
+SFX 298 0 ationally [^bdelrstxy]
+SFX 298 0 ationally [^e]r
+SFX 298 0 ationally nt
+
+SFX 299 Y 4
+SFX 299 0 ional [^n]t
+SFX 299 0 ional [sx]
+SFX 299 0 ionally [^n]t
+SFX 299 0 ionally [sx]
+
+SFX 300 Y 2
+SFX 300 0 lational [aiou]l
+SFX 300 0 lationally [aiou]l
+
+SFX 301 Y 2
+SFX 301 b ptional b
+SFX 301 b ptionally b
+
+SFX 302 Y 2
+SFX 302 be ptional be
+SFX 302 be ptionally be
+
+SFX 303 Y 2
+SFX 303 d sional d
+SFX 303 d sionally d
+
+SFX 304 Y 2
+SFX 304 de sional de
+SFX 304 de sionally de
+
+SFX 305 Y 2
+SFX 305 e ational [^bcdkst]e
+SFX 305 e ationally [^bcdkst]e
+
+SFX 306 Y 4
+SFX 306 e ional [^o]se
+SFX 306 e ional te
+SFX 306 e ionally [^o]se
+SFX 306 e ionally te
+
+SFX 307 Y 2
+SFX 307 e itional ose
+SFX 307 e itionally ose
+
+SFX 308 Y 2
+SFX 308 e tional ce
+SFX 308 e tionally ce
+
+SFX 309 Y 2
+SFX 309 el ulsional el
+SFX 309 el ulsionally el
+
+SFX 310 Y 2
+SFX 310 er rational er
+SFX 310 er rationally er
+
+SFX 311 Y 2
+SFX 311 ke cational ke
+SFX 311 ke cationally ke
+
+SFX 312 Y 2
+SFX 312 y icational y
+SFX 312 y icationally y
+
+SFX 313 Y 3
+SFX 313 0 ary ion
+SFX 313 0 atory [^i]m
+SFX 313 0 ery h
+
+SFX 314 Y 8
+SFX 314 0 nery [aiu]n
+SFX 314 0 ory [^aeous]t
+SFX 314 0 ory s
+SFX 314 0 ry [^aiou]n
+SFX 314 0 ry [^ehmstn]
+SFX 314 0 ry [^i]on
+SFX 314 0 ry [^mrst]e
+SFX 314 0 ry [aeous]t
+
+SFX 315 Y 3
+SFX 315 e ary se
+SFX 315 e atory [mr]e
+SFX 315 e ory te
+
+SFX 316 Y 1
+SFX 316 im matory im
+
+SFX 317 Y 1
+SFX 317 0 bily [^aeio][aeiou]b
+
+SFX 318 Y 1
+SFX 318 0 dily [^aeio][aeiou]d
+
+SFX 319 Y 1
+SFX 319 0 fily [^aeio][aeiou]f
+
+SFX 320 Y 1
+SFX 320 0 gily [^aeio][aeiou]g
+
+SFX 321 Y 8
+SFX 321 0 ily [^aeio]e[nrt]
+SFX 321 0 ily [^aeiou][bcdfgklmnprstvyz]
+SFX 321 0 ily [^ebcdfgklmnprstvyz]
+SFX 321 0 ily [aeio][aeiou][bcdfgklmnprstvyz]
+SFX 321 0 ily [aeiouy]e
+SFX 321 0 ily [aiou]y
+SFX 321 0 kily [^aeio][aeiou]c
+SFX 321 0 kily [^aeio][aeiou]k
+
+SFX 322 Y 1
+SFX 322 0 lily [^aeio][aeiou]l
+
+SFX 323 Y 1
+SFX 323 0 mily [^aeio][aeiou]m
+
+SFX 324 Y 1
+SFX 324 0 nily [^aeio][aiou]n
+
+SFX 325 Y 1
+SFX 325 0 pily [^aeio][aeiou]p
+
+SFX 326 Y 1
+SFX 326 0 rily [^aeio][aiou]r
+
+SFX 327 Y 1
+SFX 327 0 sily [^aeio][aeiou]s
+
+SFX 328 Y 1
+SFX 328 0 tily [^aeio][aiou]t
+
+SFX 329 Y 1
+SFX 329 0 vily [^aeio][aeiou]v
+
+SFX 330 Y 1
+SFX 330 0 zily [^aeio][aeiou]z
+
+SFX 331 Y 1
+SFX 331 e ily [^aeiouy]e
+
+SFX 332 Y 1
+SFX 332 ey ily ey
+
