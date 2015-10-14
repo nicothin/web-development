@@ -1,0 +1,22 @@
+[
+  // макрос добавления атрибута class (должен быть указанный файл!)
+  // { "keys": ["shift+alt+c"], "command": "run_macro_file", "args": {"file": "Packages/User/macros_add_class.sublime-macro"} },
+  // макрос добавления фигурных скобок и переноса меж ними, курсор будет внутри (должен быть указанный файл!)
+  // { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/macros_add_sk.sublime-macro"} },
+  // добавить закладку
+  { "keys": ["ctrl+b"], "command": "toggle_bookmark" },
+  // перейти к закладке
+  { "keys": ["f2"], "command": "next_bookmark" },
+  // перейти к предыдущей закладке
+  { "keys": ["shift+f2"], "command": "prev_bookmark" },
+  // открыть текущий файл в браузере
+  { "keys": ["f12"],
+    "command": "side_bar_open_in_browser" ,
+    "args":{"paths":[], "type":"testing", "browser":""}
+  },
+  // создать в проекте новый файл
+  {
+    "keys": ["ctrl+t"],
+    "command": "side_bar_new_file2"
+  },
+]
