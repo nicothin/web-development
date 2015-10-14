@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
   <key>name</key>
-  <string>Notepad++</string>
+  <string>nicothin</string>
   <key>settings</key>
   <array>
     <dict>
@@ -33,7 +33,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#008000</string>
+        <string>#BDBDBD</string>
       </dict>
     </dict>
     <dict>
@@ -96,7 +96,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#644511</string>				
+        <string>#644511</string>
       </dict>
     </dict>
     <dict>
@@ -447,11 +447,12 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#FFFFFA</string>
+        <string>#FFFFFF</string>
       </dict>
     </dict>
 
     <!-- JavaScript -->
+
     <dict>
       <key>name</key>
       <string>JavaScript - String</string>
@@ -462,9 +463,10 @@
         <key>foreground</key>
         <string>#808080</string>
       </dict>
-    </dict>		
+    </dict>
 
     <!-- bracket highlighting -->
+
     <dict>
         <key>name</key>
         <string>Bracket Curly</string>
@@ -478,7 +480,7 @@
             <string>#FFFF99</string>
         </dict>
     </dict>
-    
+
     <dict>
         <key>name</key>
         <string>Bracket Tag</string>
@@ -544,8 +546,9 @@
             <string>#FFFFCC</string>
         </dict>
     </dict>
-    
+
     <!-- blue html brackets -->
+
     <dict>
       <key>name</key>
       <string>HTML: Tag Punctuation</string>
