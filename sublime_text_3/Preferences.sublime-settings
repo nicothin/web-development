@@ -3,7 +3,7 @@
   // "color_scheme": "Packages/nicothin.tmTheme",
   // словарь для проверки орфографии (должен быть указанный файл!)
   // "dictionary": "Packages/russian_english.dic",
-  // всегда показыватьобласть вьюпорта на мини-карте
+  // всегда показывать область вьюпорта на мини-карте
   "always_show_minimap_viewport": true,
   // показывать в статусной строку кодировку файла
   "show_encoding": true,
