@@ -31,6 +31,8 @@
 
 ## Горячие клавиши
 
+Настройки по умолчанию: Preferences → Key Bindings - Default. Свои настройки: Preferences → Key Bindings - User
+
 <kbd>Ctrl + Shift + P</kbd> — все имеющиеся в ST3 команды
 
 <kbd>Ctrl + +</kbd> — увеличить размер шрифта
