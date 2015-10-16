@@ -23,6 +23,7 @@
 Packages/
   User/
     Default (Windows).sublime-keymap    — пользовательские настройки горячих клавиш в Win/Linux
+    Emmet.sublime-settings              — настройки Emmet-а
     macros_add_class.sublime-macro      — макрос добавления атрибута class
     macros_add_sk.sublime-macro         — макрос добавления фигурных скобок
     Preferences.sublime-settings        — комментированный файл настроек
