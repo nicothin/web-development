@@ -17,16 +17,19 @@
 
 ## Содержимое этой папки репозитория
 
-`Default (Windows).sublime-keymap` — дополнительные настройки горячих клавиш.
+Папка `Packages` повторяет папку с настройками установленного ST3, чтобы ее открыть: Preferences → Browse Packages.
 
-`Preferences.sublime-settings` — комментированный файл настроек.
-
-`nicothin.tmTheme` — тема оформления (располагать в `Packages/nicothin.tmTheme`).
-
-`russian_english.aff` и `russian_english.dic` — файлы для провекри орфографии (располагать в `Packages/`).
-
-`macros/` — макросы (располагать в `Packages/User`).
-
+```
+Packages/
+  User/
+    Default (Windows).sublime-keymap    — пользовательские настройки горячих клавиш в Win/Linux
+    macros_add_class.sublime-macro      — макрос добавления атрибута class
+    macros_add_sk.sublime-macro         — макрос добавления фигурных скобок
+    Preferences.sublime-settings        — комментированный файл настроек
+  nicothin.tmTheme                      — тема оформления
+  russian_english.aff                   — файл для проверки орфографии
+  russian_english.dic                   — файл для проверки орфографии
+```
 
 
 ## Горячие клавиши
