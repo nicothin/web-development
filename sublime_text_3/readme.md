@@ -4,14 +4,24 @@
 
 
 
-## Минимум необходимых дополнений
+## Дополнения
 
-Как установить: <kbd>Ctrl + Shift + P</kbd> (покажет список всех команд ST3), набрать `inst`, чтобы быстро найти команду `Package Contrlo: Install Package`, <kbd>Enter</kbd>, в появившемся списке всех возможных к установке дополнений начать набирать часть имени дополнения, когда оно найдено — <kbd>Enter</kbd>.
+Как установить: <kbd>Ctrl + Shift + P</kbd> (покажет список всех команд ST3), набрать `inst`, чтобы быстро найти команду `Package Control: Install Package`, <kbd>Enter</kbd>, в появившемся списке всех возможных к установке дополнений начать набирать часть имени дополнения, когда оно найдено — <kbd>Enter</kbd>.
 
-- Emmet — сильно ускоряет набор при помощи аббревиатур.
-- AutoFileName — выдает подсказки при подключении файлов.
-- Bracket Hightlighter — подсвечивает строки с открывающей и закрывающей скобками.
-- Sidebar Enhancements — расширяет возможности сайдбара.
+### Необходимый минимум
+
+- [Emmet](https://packagecontrol.io/packages/Emmet) — сильно ускоряет набор при помощи аббревиатур
+- [AutoFileName](https://packagecontrol.io/packages/AutoFileName) — выдает подсказки при подключении файлов
+- [Sidebar Enhancements](https://packagecontrol.io/packages/SideBarEnhancements) — расширяет возможности сайдбара
+- [LESS](https://packagecontrol.io/packages/LESS), [SCSS](https://packagecontrol.io/packages/SCSS), [Stylus](https://packagecontrol.io/packages/Stylus) — дополнения для подсветки синтаксиса CSS-препроцессоров
+- [Color Highlighter](https://packagecontrol.io/packages/Color%20Highlighter) — подсветка цвета, если курсор внутри указания цвета
+
+### Необязательные
+
+- [Bracket​Highlighter](https://packagecontrol.io/packages/BracketHighlighter) — подсвечивает строки с открывающей и закрывающей скобками
+- [AlignTab](https://packagecontrol.io/packages/AlignTab) — добавляет в контекстное меню возможности выравнивания
+- [Can I Use](https://packagecontrol.io/packages/Can%20I%20Use) — добавляет в контекстное меню справку с caniuse.com
+- [PlainTasks](https://packagecontrol.io/packages/PlainTasks) — ведение списка задач в виде файла
 
 
 
@@ -49,7 +59,7 @@ Packages/
 
 <kbd>Shift + ПКМ</kbd> — вертикальное выделение
 
-<kbd>Ctrl + D</kbd> — выделить слово
+<kbd>Ctrl + D</kbd> — выделить слово, в котором курсор (повторное нажатие — выделение следующего такого же слова)
 
 <kbd>Alt + F3</kbd> (выделено слово) — найти и выделить всё
 
