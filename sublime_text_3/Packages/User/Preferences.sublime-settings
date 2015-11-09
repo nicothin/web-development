@@ -3,6 +3,8 @@
   // "color_scheme": "Packages/nicothin.tmTheme",
   // словарь для проверки орфографии (должен быть указанный файл!)
   // "dictionary": "Packages/russian_english.dic",
+  // размер шрифта по умолчанию
+  "font_size": 12,
   // всегда показывать область вьюпорта на мини-карте
   "always_show_minimap_viewport": true,
   // показывать в статусной строку кодировку файла
@@ -11,7 +13,7 @@
   "auto_complete": false,
   // показывать в сайдбаре имена папок жирным
   "bold_folder_labels": true,
-  // восегда показывать пробельные символы
+  // всегда показывать пробельные символы
   "draw_white_space": "all",
   // не показывать в сайдбаре указанные папки
   "folder_exclude_patterns":
