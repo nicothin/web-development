@@ -33,7 +33,7 @@
     "lorem.defaultLang": "ru",
   },
 
-  // Переназваниение синтаксиса
+  // Переназначение подсветки синтаксиса
   // http://docs.emmet.io/customization/syntax-profiles/
   "syntaxProfiles": {
     "hbs": "html",
