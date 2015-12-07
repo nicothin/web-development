@@ -1,2 +1,6 @@
 *.sublime-workspace
 *.sublime-project
+
+node_modules
+npm-debug.log
+Thumbs.db
