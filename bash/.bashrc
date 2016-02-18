@@ -22,5 +22,6 @@ alias pro='cd /d/projects'
 
 # alias subl='/d/programs/Sublime\ Text\ 3/sublime_text.exe' $*
 
-alias i='npm i'
-alias s='npm start'
+alias i='npm i $*'
+alias s='npm start $*'
+alias r='npm run $*'
