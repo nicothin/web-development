@@ -9,4 +9,7 @@
 
 CSS-препроцессоры в порядке уменьшения популярности на момент написания этого текста: [SASS](http://sass-lang.com/), [LESS](http://lesscss.org/), [stylus](http://stylus-lang.com/).
 
-Сразу возьмите в свое рабочее окружение какое-либо соглашение о написании кода. К примеру: [Code Guide by @mdo](http://codeguide.co/), или [Стиль кода Академии HTML](https://htmlacademy.github.io/codeguide/), или [CSS Guidelines от Гарри Робертса](http://cssguidelin.es/).
+Сразу возьмите в свое рабочее окружение какое-либо соглашение о написании кода. К примеру: [Code Guide by @mdo](http://codeguide.co/), или [Стиль кода Академии HTML](https://htmlacademy.github.io/codeguide/), или [CSS Guidelines от Гарри Робертса](http://cssguidelin.es/). Всегда пишите красивый код.
+
+Статусы описываемых приемов: плохая практика, использовать осторожно, хорошая практика.
+
