@@ -44,8 +44,8 @@ git init folder-name # создать новый проект в указанн�
 
 ``` bash
 git clone git@github.com:nicothin/web-design.git # клонировать удаленный репозиторий в одноименную папку
-# или
 git clone git@github.com:nicothin/web-design.git foldername # клонировать удаленный репозиторий в папку «foldername»
+git clone git@github.com:nicothin/web-design.git . # клонировать репозиторий в текущую папку
 ```
 
 
