@@ -26,7 +26,7 @@ Git — система контроля версий (файлов). Что-то
 
 ### Консоль
 
-[Как использовать консоль в Windows](http://nicothin.ru/page/console-windows) (на OSX и Linux сразу есть хорошая консоль (терминал)). [Как комфортно работать с GitHub в консоли Windows](http://nicothin.ru/page/kak-komfortno-rabotat-s-github-v-konsoli-windows).
+[Как использовать консоль в Windows](http://nicothin.pro/page/console-windows) (на OSX и Linux сразу есть хорошая консоль (терминал)). [Как комфортно работать с GitHub в консоли Windows](http://nicothin.pro/page/kak-komfortno-rabotat-s-github-v-konsoli-windows).
 
 
 ### Длинный вывод в консоли: Vim
