@@ -172,6 +172,7 @@ git branch -a # показать все имеющиеся ветки (в т.ч.
 git remote -v # показать список удалённых репозиториев, связанных с этим
 git remote remove origin # убрать привязку удалённого репозитория с сокр. именем origin
 git remote add origin git@github.com:nicothin/test.git # добавить удалённый репозиторий (с сокр. именем origin) с указанным URL
+git remote rm origin # удалить привязку удалённого репозитория
 git remote show origin # получить данные об удалённом репозитории с сокращенным именем origin
 git fetch origin # скачать все ветки с удаленного репозитория (с сокр. именем origin), но не сливать со своими ветками
 git fetch origin master # то же, но скачивается только указанная ветка
@@ -308,4 +309,19 @@ git remote add upstream git@github.com:address.git # добавляем удал
 git fetch upstream # качаем все ветки мастер-репозитория, но пока не сливаем со своими
 git checkout master # переключаемся на ветку master своего репозитория
 git merge upstream/master # вливаем ветку master удалённого репозитория upstream в свою ветку master
+```
+
+
+
+### При любом действии с github (или другим удалённым сервисом) запрешивается логин/пароль
+
+Речь именно о запросе пароля, а не ключевой фразы.
+
+``` bash
+# указана последовательность действий:
+git remote -v # показать список удалённых репозиториев с адресами (у проблемного будет адрес по https)
+git remote add origin git@github.com:address.git # добавляем удаленный репозиторий, сокр. имя — origin
+# если возникает ошибка добавления с сообщением о том, что origin «уже задан», то: 
+git remote rm origin # удаляем привязанный удалённый репозиторий
+git remote add origin git@github.com:address.git # добавляем удаленный репозиторий, сокр. имя — origin
 ```
