@@ -1,0 +1,21 @@
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [30, 80, 120],
+  "editor.roundedSelection": false,
+  "editor.wrappingColumn": 0,
+  "editor.renderWhitespace": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "html.format.wrapLineLength": 0,
+  "less.lint.zeroUnits": "warning",
+  "less.lint.idSelector": "warning",
+}
