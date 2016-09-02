@@ -45,7 +45,7 @@ npm r [package]       # то же, что npm uninstall [package]
 
 
 
-## Инициализация
+## Разное
 
 Задайте свои данные по умолчанию, чтобы не вводить их при каждом `npm init`.
 
@@ -54,6 +54,8 @@ npm set init.author.name "$NAME"
 npm set init.author.email "$EMAIL"
 npm set init.author.url "$SITE"
 ```
+
+Поместите в корень репозитория файл `.npmrc` из этого репозитория для уменьшения длинны сообщений об ошибках в консоли.
 
 
 
