@@ -7,6 +7,7 @@ npm i [package] -D    # то же, что npm install [package] --save-dev (ус
 npm home [package]    # открыть домашнюю страницу пакета
 npm repo [package]    # открыть страницу проекта в репозитории
 npm r [package]       # то же, что npm uninstall [package]
+npm list -g --depth=0 # показать список глобально установленных пакетов
 ```
 
 
@@ -57,9 +58,19 @@ npm set init.author.url "$SITE"
 
 Поместите в корень репозитория файл `.npmrc` из этого репозитория для уменьшения длинны сообщений об ошибках в консоли.
 
+Используете [bower](https://bower.io/)? Хорошо. Но для тех, кто его не использует, будет невозможно собрать проект. Чтобы этого избежать, поставьте bower как зависимость и пропишите команду, выполняющуюся сразу после вызова `npm install`:
+
+```bash
+"scripts": {
+  "postinstall": "bower install"
+},
+```
+
 
 
 ## Полезные ссылки
 
+- [Введение в пакетный менеджер NPM для начинающих](http://prgssr.ru/development/vvedenie-v-paketnyj-menedzher-npm-dlya-nachinayushih.html#heading-node)
 - [Как устанавливать пакеты без `sudo`](https://docs.npmjs.com/getting-started/fixing-npm-permissions)
 - [Автоматизация задач с помощью npm run](http://frontender.info/task_automation_with_npm_run/)
+- [Почему npm-скрипты?](http://prgssr.ru/development/pochemu-npm-skripty.html#heading-browsersync)
