@@ -48,7 +48,7 @@ npm outdated               # сравнить версии установлен�
 },
 ```
 
-и паралельно:
+и параллельно:
 ```json
 "scripts": {
   "coverage": "npm run tests-coverage & npm run types-coverage"
