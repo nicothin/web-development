@@ -4,7 +4,7 @@
 eval `ssh-agent -s`
 ssh-add
 
-
+export PATH=./node_modules/.bin:$PATH
 
 alias ls='ls -hF -1 --color=tty --sort=extension --show-control-chars'
 
