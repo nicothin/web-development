@@ -469,7 +469,7 @@ git branch -d new-page-header   # удаляем ветку new_page_header
 ``` bash
 # находимся в ветке fix, баг уже «исправлен»
 git checkout master            # переключаемся на master
-git merge fix                  # вливаем изменения их fix в master
+git merge fix                  # вливаем изменения из fix в master
 # видим проблему: часть функциональности сломалась
 git checkout fix               # переключаемся на fix (пока мы в master, git не даст ее двигать)
 git branch -f master ORIG_HEAD # передвигаем ветку master на коммит, указанный в ORIG_HEAD (тот, на который указывала master до вливания fix)
