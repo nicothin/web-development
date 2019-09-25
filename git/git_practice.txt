@@ -1,0 +1,3 @@
+Hello World
+Oleg Filonov
+for School JS
