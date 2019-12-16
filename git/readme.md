@@ -342,6 +342,8 @@ git remote show origin     # получить данные об удалённо
 git fetch origin           # скачать все ветки с удаленного репозитория (с сокр. именем origin), но не сливать со своими ветками
 git fetch origin master    # то же, но скачивается только указанная ветка
 git checkout --track origin/github_branch # создать локальную ветку github_branch (данные взять из удалённого репозитория с сокр. именем origin, ветка github_branch) и переключиться на неё
+git checkout -b remote_branch origin/remote_branch #
+git branch -vv # показываеть какая ветка следить за какой веткой на удаленном репозиитории
 git push origin master     # отправить в удалённый репозиторий (с сокр. именем origin) данные своей ветки master
 git pull origin            # влить изменения с удалённого репозитория (все ветки)
 git pull origin master     # влить изменения с удалённого репозитория (только указанная ветка)
