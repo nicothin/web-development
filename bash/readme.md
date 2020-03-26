@@ -5,7 +5,7 @@
  В этой папке 2 файла:
  
  - `.bashrc` - для Windows.
- - `bash_profile` - для maxOS.
+ - `.bash_profile` - для maxOS.
 
 ## Суть
 
