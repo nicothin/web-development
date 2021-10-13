@@ -4,7 +4,7 @@ cd ~/projects
 
 
 # Алиасы
-alias ls='ls -1pG'
+alias ls='ls -1pg'
 
 alias gl='git log --oneline --max-count=40 $*'
 alias gs='git status'
